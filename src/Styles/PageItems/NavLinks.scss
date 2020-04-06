@@ -3,15 +3,15 @@
 #Nav-container{
     display:flex;
     justify-content: space-between;
-    margin: 1em 1em -1em 0em;
+    margin: 0em 0em -7em 0em;
+    padding: 1em 2em 0em 2em;
     font-family: $primaryFont;
 
     #Nav-title-container{
         align-items: center;
-        padding-left: 4em;
 
         #Nav-h1{
-            color: grey;
+            color: white;
             letter-spacing: 10px;
             font-weight: 300;
         } 

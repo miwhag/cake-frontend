@@ -13,9 +13,10 @@ const pulse = keyframes`
 }
 
 50% {
-    transform: scale(1.4);
+    transform: scale(1.6);
     opacity: 0.9;
     transform-origin: bottom;
+
 }
 
 100% {
@@ -26,17 +27,27 @@ const pulse = keyframes`
 
 `;
 export const HomepageImage = styled(Cake)`
-margin: -4em 0em 0em -5em;
+margin: -4em 9em 5em -16em;
 
 .bubble{
-animation: ${pulse} infinite 4s linear;
+  animation: ${pulse} infinite 5s linear;
   transform-origin: right;
   transform-box: fill-box;
 }
 
 .bubble:nth-of-type(2n){
-    animation: ${pulse} infinite 9s linear;
+  animation: ${pulse} infinite 7s linear;
+  animation-delay: 2s;
   transform-origin: left;
   transform-box: fill-box;
 }
+
+.bubble:nth-of-type(3n){
+  animation: ${pulse} infinite 10s linear;
+  animation-delay: 3s;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+
  `
