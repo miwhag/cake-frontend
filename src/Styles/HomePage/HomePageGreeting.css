@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 #greeting-container {
   color: #DB9395;
-  margin: 0em 0em 5em 14em;
+  margin: 0em 0em 5em 17em;
   font-family: "Questrial", sans-serif;
 }
 
@@ -20,7 +20,7 @@
 #greeting-container #greeting-container-p {
   font-size: 30px;
   margin-top: -2px;
-  color: grey;
+  color: white;
 }
 
 #greeting-container #greeting-container-button {
@@ -30,16 +30,12 @@
   padding: 8px;
   border-radius: 25px;
   color: grey;
-  -webkit-box-shadow: 2px 2px 8px #cecece;
-          box-shadow: 2px 2px 8px #cecece;
+  background-color: white;
   border: none;
   letter-spacing: 1px;
 }
 
 #greeting-container #greeting-container-button:hover {
-  background-color: #ecebf5;
   color: #613f61;
-  -webkit-box-shadow: 2px 2px 8px #cecece;
-          box-shadow: 2px 2px 8px #cecece;
 }
 /*# sourceMappingURL=HomePageGreeting.css.map */
