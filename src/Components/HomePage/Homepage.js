@@ -1,14 +1,19 @@
 
-import '../../Styles/App.css';
-import {HomepageImage} from './StyledBubbles'
+import '../../Styles/HomePage/Homepage.css'
 import React from 'react'
+import HomePageGreeting from './HomePageGreeting'
+import {HomepageImage} from './StyledBubbles'
 
 
 
 export default function Homepage() {
     return (
-        <div>
-        <HomepageImage />
-        </div>
+        <header id="Homepage-header">
+            <HomePageGreeting />
+            <HomepageImage /> 
+        </header>
+      
+      
+
     )
 }

@@ -26,18 +26,17 @@ const pulse = keyframes`
 
 `;
 export const HomepageImage = styled(Cake)`
-
-
+margin: -4em 0em 0em -5em;
 
 .bubble{
 animation: ${pulse} infinite 4s linear;
-  transform-originL center;
+  transform-origin: right;
   transform-box: fill-box;
 }
 
 .bubble:nth-of-type(2n){
-    animation: ${pulse} infinite 10s linear;
-  transform-originL center;
+    animation: ${pulse} infinite 9s linear;
+  transform-origin: left;
   transform-box: fill-box;
 }
  `
