@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+#Nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 1em -1em 0em;
+  font-family: "Questrial", sans-serif;
+}
+
+#Nav-container #Nav-title-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4em;
+}
+
+#Nav-container #Nav-title-container #Nav-h1 {
+  color: grey;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+
+#Nav-container #Nav-title-container #Nav-div-bar {
+  background-color: #ecebf5;
+  height: 5px;
+  width: 15em;
+  border-radius: 10px;
+}
+
+#Nav-container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Nav-container .nav-links #Nav-signin-button, #Nav-container .nav-links #Nav-home-button {
+  font-size: 17px;
+  padding: 10px;
+  margin: 10px;
+  width: 8em;
+  border-radius: 1em;
+  color: grey;
+  border: none;
+}
+
+#Nav-container .nav-links #Nav-signin-button:hover, #Nav-container .nav-links #Nav-home-button:hover {
+  background-color: #ecebf5;
+  color: #5d5b6a;
+  -webkit-box-shadow: 2px 2px 8px #cecece;
+          box-shadow: 2px 2px 8px #cecece;
+}
+/*# sourceMappingURL=NavLinks.css.map */

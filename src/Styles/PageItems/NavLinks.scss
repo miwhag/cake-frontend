@@ -1,0 +1,46 @@
+@import '../variables';
+
+#Nav-container{
+    display:flex;
+    justify-content: space-between;
+    margin: 1em 1em -1em 0em;
+    font-family: $primaryFont;
+
+    #Nav-title-container{
+        align-items: center;
+        padding-left: 4em;
+
+        #Nav-h1{
+            color: grey;
+            letter-spacing: 10px;
+            font-weight: 300;
+        } 
+        #Nav-div-bar{
+            background-color: $purpleBackgroundColor;
+            height: 5px;
+            width: 15em;
+            border-radius: 10px;
+        }
+    }
+    .nav-links{
+        display: flex;
+        justify-content: flex-end;
+        #Nav-signin-button, #Nav-home-button{
+        font-size: 17px;
+        padding: 10px;
+        margin: 10px;
+        width: 8em;
+        border-radius: 1em;
+        color: grey;
+
+        border: none;
+
+        &:hover{
+            background-color:$purpleBackgroundColor;
+            color: $primaryTextColor;
+            box-shadow: 2px 2px 8px rgb(206, 206, 206);
+        }
+       }
+    }
+    }
+        

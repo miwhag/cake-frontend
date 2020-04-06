@@ -1,0 +1,23 @@
+body {
+  overflow-y: hidden;
+}
+
+#Homepage-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow-x: hidden;
+}
+
+#Homepage-header:nth-of-type(1) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Homepage.css.map */
