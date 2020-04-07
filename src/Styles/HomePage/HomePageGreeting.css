@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 #greeting-container {
   color: #DB9395;
-  margin: 0em 0em 5em 17em;
+  margin: 7em 0em 5em 17em;
   font-family: "Questrial", sans-serif;
 }
 
@@ -13,13 +13,13 @@
 
 #greeting-container #greeting-container-h1 {
   font-size: 120px;
-  margin: 0;
+  margin-bottom: 10px;
   letter-spacing: 5px;
 }
 
 #greeting-container #greeting-container-p {
   font-size: 30px;
-  margin-top: -2px;
+  margin-bottom: 30px;
   color: white;
 }
 
