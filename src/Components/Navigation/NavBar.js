@@ -15,7 +15,7 @@ export default class NavBar extends Component{
                    
                     <div className="nav-links">
                         <Link to='/'><button id="Nav-home-button">Home</button></Link>
-                        <Link to='/signin'><button id="Nav-signin-button">Sign In</button></Link>
+                        <Link to='/login'><button id="Nav-signin-button">Login</button></Link>
             
                     </div>
 

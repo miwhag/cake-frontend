@@ -2,7 +2,7 @@
 
 #greeting-container{
     color: #DB9395;
-    margin: 0em 0em 5em 17em;
+    margin: 7em 0em 5em 17em;
     font-family: $primaryFont;
 
     #greeting-container-h3{
@@ -12,12 +12,12 @@
     }
     #greeting-container-h1{
         font-size: 120px;
-        margin: 0;
+        margin-bottom: 10px;
         letter-spacing: 5px;  
     }
     #greeting-container-p{
         font-size: 30px;
-        margin-top: -2px;
+        margin-bottom: 30px;
         color: white;
     }
     #greeting-container-button{

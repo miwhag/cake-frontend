@@ -21,13 +21,16 @@
   color: white;
   letter-spacing: 10px;
   font-weight: 300;
+  font-size: 25px;
+  margin: 10px;
 }
 
 #Nav-container #Nav-title-container #Nav-div-bar {
   background-color: #ecebf5;
-  height: 5px;
+  height: 4px;
   width: 15em;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 #Nav-container .nav-links {
