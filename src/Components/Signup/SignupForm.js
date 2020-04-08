@@ -10,12 +10,6 @@ export default class SignupForm extends Component {
         password: ""
     }
 
-
-    handleSignupToggle = () => {
-
-    }
-
-
     handleChange = (event) => {
         const target = event.target;
         const value = target.value;
@@ -48,16 +42,10 @@ export default class SignupForm extends Component {
 
     render() {
         return (
+            <div className="SignupForm-main-container">
             <div id="Signup-form-container">
             <form onSubmit={this.handleSubmit} id="Signup-form" className="Form">
-
-                <div id="button-box">
-                    <div id="btn"></div>
-                    <button type="button" className="toggle-btn" onClick={this.handleSignupToggle}>Signup</button>
-                    <button type="button" className="toggle-btn" onClick={this.handleLoginToggle}>Login</button>
-                </div>
-
-
+            <div className="Signup-title"><h1>Let's Get Started</h1></div>   
                 <div id="Signup-first-last-name-container">
                     <input
                         className="Signup-form-input-name" 
@@ -102,13 +90,19 @@ export default class SignupForm extends Component {
                 </input>
 
                 <button 
-                    id="Signup-form-submit" 
+                    className="Signup-form-submit" 
                     type="submit" 
                     value="Send">
                         Signup
                 </button>
-
+                
+                <button 
+                    id="login-flip-button" 
+                    onClick={this.props.flip}>
+                        Login
+                </button>
             </form>
+        </div>
         </div>
         )
     }

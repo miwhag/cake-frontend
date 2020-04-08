@@ -1,6 +1,8 @@
-@import '../meyerReset';
+@import '../Modules/_variables';
+@import '../Modules/_meyerReset';
 
-#SignupForm-main-container{
+
+.SignupForm-main-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +10,8 @@
 }
 
 #Signup-form-container{
-width: 400px;
-height: 500px;
+width: 450px;
+height: 550px;
 border-radius: 15px;
 background-color: white;
 display: flex;
@@ -17,75 +19,50 @@ align-items: center;
 position: relative;
 }
 
-#button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 0 0 20px 9px rgb(238, 221, 221);
-    #btn{
-        top: 0;
-        left: 0; 
-        position: absolute;
-        width: 110px;
-        height: 100%;
-        background: linear-gradient(to right, #ff105f, #ffad06);
-        border-radius: 30px;
-        transition: .5s;
-    }
-}
-
-.toggle-btn{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-
 .Form{
     display: grid;
     width: 100%;
     justify-items: center;
     position: absolute;
-    transition: .5s;
+    .Signup-title{
+        font-family: $primaryFont;
+        font-size: 30px;
+        color: $greyTextColor;
+        padding-bottom: 30px;
+
+    }
     #Signup-first-last-name-container{
         display: flex;
-    }
-    #Logo{
-        width: 100px;
-        padding-bottom: 10px;
+        
     }
 }
 
-#Signup-form{
-
-}
-
-#Login-form{
-
-}
 
 .Signup-form-input{
-    width: 280px;
-    padding: 10px;
-    margin: 12px;
-    border-radius: 9px;
+    width: 300px;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 5px;
     font-size: 13px;
     background: transparent;
+    &:focus{
+        outline: none;
+    }
 }
 
 .Signup-form-input-name{
-    width: 130px;
-    padding: 10px;
+    width: 140px;
+    padding: 13px;
     margin: 12px;
-    border-radius: 9px;
+    border-radius: 5px;
     font-size: 13px;
     background: transparent;
+    &:focus{
+        outline: none;
+    }
 }
 
-#Signup-form-submit{
+.Signup-form-submit{
     width: 140px;
     padding: 10px;
     margin: 20px;
@@ -96,3 +73,11 @@ position: relative;
     cursor: pointer;
     background: linear-gradient(to right, #ff105f, #ffad06);
 }
+
+#login-flip-button, #signup-flip-button{
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+

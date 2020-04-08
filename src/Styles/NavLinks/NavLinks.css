@@ -1,4 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #Nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +67,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
+}
+
+#Nav-container #Nav-title-container a {
+  text-decoration: none;
 }
 
 #Nav-container #Nav-title-container #Nav-h1 {
@@ -40,9 +97,10 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 2;
 }
 
-#Nav-container .nav-links #Nav-signin-button, #Nav-container .nav-links #Nav-home-button {
+#Nav-container .nav-links #Nav-signin-button {
   font-size: 17px;
   padding: 10px;
   margin: 10px;
@@ -50,9 +108,10 @@
   border-radius: 1em;
   color: grey;
   border: none;
+  cursor: pointer;
 }
 
-#Nav-container .nav-links #Nav-signin-button:hover, #Nav-container .nav-links #Nav-home-button:hover {
+#Nav-container .nav-links #Nav-signin-button:hover {
   background-color: #ecebf5;
   color: #5d5b6a;
   -webkit-box-shadow: 2px 2px 8px #cecece;
