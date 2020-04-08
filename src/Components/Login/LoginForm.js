@@ -19,27 +19,17 @@ export default class LoginForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-          fetch('http://localhost:3030/login', {
-              method: 'POST', 
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(this.state)
-          }).then(response => response.json())
-          .then(user => console.log(user ))
-    
-            this.setState({
-                password: '',
-                username: '',
-            })
+          this.props.login(this.state)
+          .then(() => this.props.history.push('/build_your_cake'))
     }
     
 
     render() {
         return (
+            <div className="SignupForm-main-container">
             <div id="Signup-form-container">
-            <form id="Login-form" className="Form" onClick={this.handleSubmit}>
-
+            <form id="Login-form" className="Form" onSubmit={this.handleSubmit}>
+            <div className="Signup-title"><h1>Welcome Back</h1></div> 
                 <input
                     className="Signup-form-input" 
                     name="username" 
@@ -61,13 +51,20 @@ export default class LoginForm extends Component {
                 </input>
 
                 <button 
-                    id="Signup-form-submit" 
+                    className="Signup-form-submit" 
                     type="submit" 
                     value="Send">
                         Login
                 </button>
 
+                <button 
+                    id="signup-flip-button" 
+                    onClick={this.props.flip}>
+                        Signup
+                </button>
+
             </form>
+        </div>
         </div>
         )
     }

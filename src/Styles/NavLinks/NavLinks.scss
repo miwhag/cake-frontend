@@ -1,4 +1,5 @@
-@import '../variables';
+@import '../Modules/_variables';
+@import '../Modules/_meyerReset';
 
 #Nav-container{
     display:flex;
@@ -7,8 +8,13 @@
     padding: 1em 2em 0em 2em;
     font-family: $primaryFont;
 
+
     #Nav-title-container{
         align-items: center;
+        z-index: 2;
+        a{
+            text-decoration: none;
+        }
 
         #Nav-h1{
             color: white;
@@ -17,6 +23,7 @@
             font-size: 25px;
             margin: 10px;
         } 
+
         #Nav-div-bar{
             background-color: $purpleBackgroundColor;
             height: 4px;
@@ -28,15 +35,16 @@
     .nav-links{
         display: flex;
         justify-content: flex-end;
-        #Nav-signin-button, #Nav-home-button{
+        z-index: 2;
+        #Nav-signin-button{
         font-size: 17px;
         padding: 10px;
         margin: 10px;
         width: 8em;
         border-radius: 1em;
         color: grey;
-
         border: none;
+        cursor: pointer;
 
         &:hover{
             background-color:$purpleBackgroundColor;

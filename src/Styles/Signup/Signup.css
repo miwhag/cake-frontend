@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,7 +51,7 @@ table {
           box-sizing: border-box;
 }
 
-#SignupForm-main-container {
+.SignupForm-main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,8 +65,8 @@ table {
 }
 
 #Signup-form-container {
-  width: 400px;
-  height: 500px;
+  width: 450px;
+  height: 550px;
   border-radius: 15px;
   background-color: white;
   display: -webkit-box;
@@ -77,45 +78,19 @@ table {
   position: relative;
 }
 
-#button-box {
-  width: 220px;
-  margin: 35px auto;
-  position: relative;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 0 20px 9px #eedddd;
-          box-shadow: 0 0 20px 9px #eedddd;
-}
-
-#button-box #btn {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 110px;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ff105f), to(#ffad06));
-  background: linear-gradient(to right, #ff105f, #ffad06);
-  border-radius: 30px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.toggle-btn {
-  padding: 10px 30px;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  outline: none;
-  position: relative;
-}
-
 .Form {
   display: -ms-grid;
   display: grid;
   width: 100%;
   justify-items: center;
   position: absolute;
-  -webkit-transition: .5s;
-  transition: .5s;
+}
+
+.Form .Signup-title {
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  color: #363636;
+  padding-bottom: 30px;
 }
 
 .Form #Signup-first-last-name-container {
@@ -124,30 +99,33 @@ table {
   display: flex;
 }
 
-.Form #Logo {
-  width: 100px;
-  padding-bottom: 10px;
-}
-
 .Signup-form-input {
-  width: 280px;
-  padding: 10px;
-  margin: 12px;
-  border-radius: 9px;
+  width: 300px;
+  padding: 13px;
+  margin: 10px;
+  border-radius: 5px;
   font-size: 13px;
   background: transparent;
+}
+
+.Signup-form-input:focus {
+  outline: none;
 }
 
 .Signup-form-input-name {
-  width: 130px;
-  padding: 10px;
+  width: 140px;
+  padding: 13px;
   margin: 12px;
-  border-radius: 9px;
+  border-radius: 5px;
   font-size: 13px;
   background: transparent;
 }
 
-#Signup-form-submit {
+.Signup-form-input-name:focus {
+  outline: none;
+}
+
+.Signup-form-submit {
   width: 140px;
   padding: 10px;
   margin: 20px;
@@ -158,5 +136,11 @@ table {
   cursor: pointer;
   background: -webkit-gradient(linear, left top, right top, from(#ff105f), to(#ffad06));
   background: linear-gradient(to right, #ff105f, #ffad06);
+}
+
+#login-flip-button, #signup-flip-button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
 }
 /*# sourceMappingURL=Signup.css.map */
