@@ -19,6 +19,8 @@
         border-left: 1px solid rgb(177, 175, 175);
         height: 100%;
         width: 100%;
+        overflow: scroll;
+    
         #title-container{
             display: flex;
             flex-direction: column;

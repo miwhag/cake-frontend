@@ -78,6 +78,7 @@ table {
   border-left: 1px solid #b1afaf;
   height: 100%;
   width: 100%;
+  overflow: scroll;
 }
 
 #CakeBuildPage-container main #cake-build-container #title-container {
