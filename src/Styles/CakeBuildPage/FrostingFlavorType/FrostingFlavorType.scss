@@ -1,0 +1,27 @@
+@import '../../Modules/variables';
+@import '../../Modules/_meyerReset';
+
+
+#FrostingFlavorTypeContainer-main-container{
+display:grid;
+grid-template-columns: repeat(5, auto);
+padding: 30px;
+}
+
+#FrostingFlavorTypeCard-container{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    // font-family: $primaryFont;
+    margin: 5px;
+    p{
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .FrostingFlavorType-image{
+        width: 70px;
+        border-radius: 10px;
+    }
+}
+

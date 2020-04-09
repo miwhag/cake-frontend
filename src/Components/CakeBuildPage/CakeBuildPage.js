@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../../Styles/CakeBuildPage/CakeBuildPage.css'
 import FrostingTypeContainer from './FrostingType/FrostingTypeContainer'
 import CakeFlavorsContainer from './CakeFlavors/CakeFlavorsContainer'
+import FrostingFlavorTypeContainer from './FrostingFlavorType/FrostingFlavorTypeContainer'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -51,9 +52,10 @@ export default class CakeBuildPage extends Component {
                             <Tabs>
                                 <TabList>
                                 <Tab>Cake Flavors</Tab>
-                                <Tab>Frosting Types</Tab>
                                 <Tab>Frosting Flavors</Tab>
                                 <Tab>All Frosting Types</Tab>
+                                <Tab>About Frosting Types</Tab>
+                                <Tab>About Finish Types</Tab>
                                 </TabList>
                             
                                 <TabPanel>
@@ -61,8 +63,23 @@ export default class CakeBuildPage extends Component {
                                 </TabPanel>
 
                                 <TabPanel>
-                                <FrostingTypeContainer />
+                                <FrostingFlavorTypeContainer frosting_flavor_type={this.state.frosting_flavor_type} />
                                 </TabPanel>
+
+                                <TabPanel>
+                     
+                                </TabPanel>
+
+
+                                <TabPanel>
+                                <FrostingTypeContainer frosting_type={this.state.frosting_type} />
+                                </TabPanel>
+
+                                <TabPanel>
+                     
+                                </TabPanel>
+
+
                             </Tabs>
                         </div>   
                     </section>

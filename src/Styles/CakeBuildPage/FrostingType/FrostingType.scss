@@ -1,0 +1,16 @@
+@import '../../Modules/_variables';
+@import '../../Modules/_meyerReset';
+
+
+#FrostingFlavorCard-container{
+    #FrostingType-h1{
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: purple;
+    }
+    #FrostingType-p{
+        margin: 10px 0px 40px 0px;
+        font-size: 17px;
+        line-height: 23px;
+    }
+}
