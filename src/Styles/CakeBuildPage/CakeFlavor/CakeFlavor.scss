@@ -1,0 +1,28 @@
+@import '../../Modules/variables';
+@import '../../Modules/_meyerReset';
+
+
+#CakeFlavorsContainer-main-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 30px;
+}
+
+.CakeFlavorCard-container{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    // font-family: $primaryFont;
+    margin: 5px;
+    p{
+        padding: 5px;
+    }
+
+    .CakeFlavorCard-image{
+        width: 70px;
+        border-radius: 10px;
+    }
+
+}
+
