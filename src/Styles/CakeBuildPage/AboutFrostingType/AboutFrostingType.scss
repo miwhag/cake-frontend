@@ -2,11 +2,19 @@
 @import '../../Modules/_meyerReset';
 
 
+#AboutFrostingType-main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 20px 20px;
+    width: 45em;
+}
+
 #FrostingFlavorCard-container{
+
     #FrostingType-h1{
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 5px;
-        color: purple;
+        color: black;
     }
     #FrostingType-p{
         margin: 10px 0px 40px 0px;

@@ -1,0 +1,32 @@
+@import '../../Modules/variables';
+@import '../../Modules/_meyerReset';
+
+#AboutFinishTypeContainer{
+    width: 45em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center; 
+}
+
+#AboutFinishTypeCard-container{
+    width: 234px;
+    display: grid;
+    grid-template-rows: 71% 9% 0%;
+    margin: 35px 15px 15px 15px;
+
+    #AboutFinishTypeCard-h1{
+        font-size: 20px;
+        margin: 10px 0px 10px 0px;
+
+    }
+    #AboutFinishTypeCard-p{
+        width: 230px;
+        font-size: 14px;
+
+    }
+    .AboutFinishTypeCard-image{
+        width: 230px;
+        border-radius: 10px;
+    }
+}
+

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import '../../../Styles/CakeBuildPage/FrostingType/FrostingType.scss'
+import '../../../Styles/CakeBuildPage/AboutFrostingType/AboutFrostingType.css'
 
-export default class FrostingTypeCard extends Component {
+export default class AboutFrostingTypeCard extends Component {
     render() {
         const {frosting, info} = this.props;
         return (

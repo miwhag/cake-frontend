@@ -54,25 +54,61 @@ table {
 #FrostingFlavorTypeContainer-main-container {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: (auto)[5];
       grid-template-columns: repeat(5, auto);
   padding: 30px;
+  width: 45em;
 }
 
 #FrostingFlavorTypeCard-container {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 140px;
+  margin: 6px;
   text-align: center;
-  margin: 5px;
 }
 
 #FrostingFlavorTypeCard-container p {
-  padding: 5px;
+  padding: 15px;
   font-size: 15px;
+  color: black;
 }
 
 #FrostingFlavorTypeCard-container .FrostingFlavorType-image {
   width: 70px;
   border-radius: 10px;
+}
+
+#filter-frostingtype-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+#filter-frostingtype-form h1 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 16px;
+}
+
+#FrostingFlavorTypeContainer-select {
+  width: 230px;
+  height: 35px;
+  font-size: 14px;
+}
+
+#FrostingFlavorTypeContainer-select:focus {
+  outline: none;
 }
 /*# sourceMappingURL=FrostingFlavorType.css.map */

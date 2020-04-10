@@ -51,32 +51,38 @@ table {
           box-sizing: border-box;
 }
 
-#CakeFlavorsContainer-main-container {
+#AboutFinishTypeContainer {
+  width: 45em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
-  margin: 30px 10px 10px 10px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 45em;
 }
 
-.CakeFlavorCard-container {
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  margin: 13px;
+#AboutFinishTypeCard-container {
+  width: 234px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 71% 9% 0%;
+      grid-template-rows: 71% 9% 0%;
+  margin: 35px 15px 15px 15px;
 }
 
-.CakeFlavorCard-container p {
+#AboutFinishTypeCard-container #AboutFinishTypeCard-h1 {
+  font-size: 20px;
   margin: 10px 0px 10px 0px;
 }
 
-.CakeFlavorCard-container .CakeFlavorCard-image {
-  width: 70px;
-  border-radius: 10px;
-  margin-top: 20px;
+#AboutFinishTypeCard-container #AboutFinishTypeCard-p {
+  width: 230px;
+  font-size: 14px;
 }
-/*# sourceMappingURL=CakeFlavor.css.map */
+
+#AboutFinishTypeCard-container .AboutFinishTypeCard-image {
+  width: 230px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=AboutFinishType.css.map */
