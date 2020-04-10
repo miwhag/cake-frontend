@@ -4,24 +4,49 @@
 
 #FrostingFlavorTypeContainer-main-container{
 display:grid;
+justify-content: center;
 grid-template-columns: repeat(5, auto);
 padding: 30px;
+width: 45em;
 }
 
 #FrostingFlavorTypeCard-container{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 140px;
+    margin: 6px;
     text-align: center;
-    // font-family: $primaryFont;
-    margin: 5px;
+  
     p{
-        padding: 5px;
+        padding: 15px;
         font-size: 15px;
+        color: black;
     }
-
     .FrostingFlavorType-image{
         width: 70px;
         border-radius: 10px;
+    }
+}
+
+#filter-frostingtype-form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em;
+    h1{
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 16px;
+    }
+}
+
+#FrostingFlavorTypeContainer-select{
+    width: 230px;
+    height: 35px;
+    font-size: 14px;
+    &:focus{
+        outline: none;
     }
 }
 

@@ -3,25 +3,26 @@
 
 
 #CakeFlavorsContainer-main-container{
-display: flex;
-flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(5, auto);
+margin: 30px 10px 10px 10px;
 justify-content: center;
-padding: 30px;
+width: 45em;
 }
 
 .CakeFlavorCard-container{
     width: 100px;
     height: 100px;
     text-align: center;
-    // font-family: $primaryFont;
-    margin: 5px;
+    margin: 13px;
     p{
-        padding: 5px;
+        margin: 10px 0px 10px 0px;
     }
 
     .CakeFlavorCard-image{
         width: 70px;
         border-radius: 10px;
+        margin-top: 20px;
     }
 
 }

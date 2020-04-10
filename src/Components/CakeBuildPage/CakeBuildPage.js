@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import '../../Styles/CakeBuildPage/CakeBuildPage.css'
-import FrostingTypeContainer from './FrostingType/FrostingTypeContainer'
+import AboutFrostingTypeContainer from './AboutFrostingType/AboutFrostingTypeContainer'
 import CakeFlavorsContainer from './CakeFlavors/CakeFlavorsContainer'
 import FrostingFlavorTypeContainer from './FrostingFlavorType/FrostingFlavorTypeContainer'
+import AboutFinishTypeContainer from './AboutFinishType/AboutFinishTypeContainer'
+import CakeModel from './CakeModel/CakeModel'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -13,7 +15,8 @@ export default class CakeBuildPage extends Component {
             frosting_flavors: [],
             frosting_type: [],
             frosting_flavor_type: [],
-            cake_flavors: []
+            cake_flavors: [],
+            finish_type: []
         }
 
         componentDidMount(){
@@ -31,9 +34,15 @@ export default class CakeBuildPage extends Component {
 
             fetch('http://localhost:3030/cake_flavors')
             .then(response => response.json())
-            .then(result => this.setState({cake_flavors: result.cake_flavors}))
+            .then(result => this.setState({cake_flavors: result.cake_flavors})),
+
+
+            fetch('http://localhost:3030/finish_type')
+            .then(response => response.json())
+            .then(result => this.setState({finish_type: result.finish_type}))
             )}
 
+            
 
     render() {
         return (
@@ -41,6 +50,7 @@ export default class CakeBuildPage extends Component {
                 <main>
                     <section id="cake-image-container">
                     <img id="cake-img" src="https://i.ibb.co/n1YL2gJ/templatecake.jpg" alt="cake" />
+                    <CakeModel/>
                     </section>
 
                     <section id="cake-build-container">
@@ -49,38 +59,39 @@ export default class CakeBuildPage extends Component {
                             <p id="title-p"> Below are a variety of options to decorate your cake.</p>
 
 
-                            <Tabs>
+                            <Tabs forceRenderTabPanel defaultIndex={1}>
                                 <TabList>
-                                <Tab>Cake Flavors</Tab>
-                                <Tab>Frosting Flavors</Tab>
-                                <Tab>All Frosting Types</Tab>
-                                <Tab>About Frosting Types</Tab>
-                                <Tab>About Finish Types</Tab>
+                                    <Tab>Cake Flavors</Tab>
+                                    <Tab>Frosting Flavors</Tab>
+                                    <Tab>Cake Info</Tab>
                                 </TabList>
                             
                                 <TabPanel>
-                                <CakeFlavorsContainer cake_flavors={this.state.cake_flavors} />
+                                    <CakeFlavorsContainer cake_flavors={this.state.cake_flavors} />
                                 </TabPanel>
 
                                 <TabPanel>
-                                <FrostingFlavorTypeContainer frosting_flavor_type={this.state.frosting_flavor_type} />
+                                    <FrostingFlavorTypeContainer frosting_flavor_type={this.state.frosting_flavor_type} frosting_type={this.state.frosting_type}/>
                                 </TabPanel>
 
                                 <TabPanel>
-                     
+                                    <Tabs forceRenderTabPanel>
+                                        <TabList>
+                                            <Tab>About Frosting Types</Tab>
+                                            <Tab>About Finish Types</Tab>
+                                        </TabList>
+        
+                                        <TabPanel>  
+                                            <AboutFrostingTypeContainer frosting_type={this.state.frosting_type} />
+                                        </TabPanel>
+
+                                        <TabPanel>
+                                            <AboutFinishTypeContainer finish_type={this.state.finish_type} />
+                                        </TabPanel>
+                                    </Tabs>
                                 </TabPanel>
-
-
-                                <TabPanel>
-                                <FrostingTypeContainer frosting_type={this.state.frosting_type} />
-                                </TabPanel>
-
-                                <TabPanel>
-                     
-                                </TabPanel>
-
-
                             </Tabs>
+                        
                         </div>   
                     </section>
                 </main>

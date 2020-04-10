@@ -1,9 +1,9 @@
 import React from 'react'
-import FrostingTypeCard from './FrostingTypeCard'
-import '../../../Styles/CakeBuildPage/FrostingType/FrostingType.scss'
+import FrostingTypeCard from './AboutFrostingTypeCard'
+import '../../../Styles/CakeBuildPage/AboutFrostingType/AboutFrostingType.css'
 
 
-export default function FrostingTypeContainer({frosting_type}) {
+export default function AboutFrostingTypeContainer({frosting_type}) {
 
 const displayFrostingTypes = () => { 
     return frosting_type.map(frosting => 
@@ -11,7 +11,7 @@ const displayFrostingTypes = () => {
     )}
 
     return (
-        <div id="CakeFlavorsContainer-main-container">
+        <div id="AboutFrostingType-main-container">
             {displayFrostingTypes()}
         </div>
     )

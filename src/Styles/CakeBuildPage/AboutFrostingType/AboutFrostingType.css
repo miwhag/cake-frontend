@@ -51,10 +51,22 @@ table {
           box-sizing: border-box;
 }
 
+#AboutFrostingType-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 20px 20px 20px;
+  width: 45em;
+}
+
 #FrostingFlavorCard-container #FrostingType-h1 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 5px;
-  color: purple;
+  color: black;
 }
 
 #FrostingFlavorCard-container #FrostingType-p {
@@ -62,4 +74,4 @@ table {
   font-size: 17px;
   line-height: 23px;
 }
-/*# sourceMappingURL=FrostingType.css.map */
+/*# sourceMappingURL=AboutFrostingType.css.map */
