@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+$containerHeight: 600px;
+$cakeLayerWidth: 275px;
+$cakeLayerHeight: 90px;
+$buttonSize: 40px;
+$buttonMargin: 10px;
+$plateWidth: 280px;
+$plateHeight: 40px;
+$plateColor: rgb(189, 193, 211);
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#control-container{
+height: 12%;
+}
+
+.cake {
+  width: $cakeLayerWidth;
+  height: 45%;
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 5;
+}
+
+.cake-layer {
+  width: $cakeLayerWidth;
+  height: $cakeLayerHeight;
+  transition: 0.1s;
+  animation: cakeAppear 0.5s;
+  // border: 3 solid grey;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.cake-layer:focus {
+  outline: 0;
+}
+
+.cake-layer::-moz-focus-inner {
+  border: 0;
+}
+
+@keyframes cakeAppear {
+  0% { height: $cakeLayerHeight; }
+  10% { height: $cakeLayerHeight / 1.4; }
+  100% { height: $cakeLayerHeight; }
+}
+
+.cake-controls {
+  $btnTextColor: #444;
+  $btnFocusColor: #FFBB00;
+  padding-bottom: 10em;
+  width: $cakeLayerWidth;
+  color: #DDD;
+  
+   
+  button {
+    position: absolute;
+    width: $buttonSize;
+    height: $buttonSize;
+    border-radius: 50%;
+    background-color: #EEE;
+    border: rgb(240, 234, 234) 1px solid;
+    color: rgb(165, 162, 162);
+    font-size: 20px;
+    margin: $buttonMargin;
+    transition: 0.1s;
+  }
+  
+  button:hover {
+    background-color: #FFD;
+    border-color: #DDB;
+  }
+  
+  button:active {
+    background-color: #CCC;
+    border-color: #999;
+  }
+  
+  button:focus {
+    outline: 0;
+    border-color: $btnFocusColor;
+  }
+  
+  button::-moz-focus-inner {
+    border: 0;
+  }
+  
+  .direction-controls {
+    position: absolute;
+  }
+  
+  .btn-up {
+    left: 0;
+    top: -40px;
+  }
+  
+  .btn-down {
+    left: 0;
+    top: 40px;
+  }
+  
+  .btn-wide {
+    left: 40px;
+    top: 0;
+  }
+  
+  .btn-narrow {
+    left: -40px;
+    display: flex;
+    top: 0;
+  }
+  
+ 
+  
+  
+  $noBuildColor: rgba(0, 0, 0, 0.5);
+  
+  button.no-build, .no-build .help-candle-base, button.no-build:hover, button.no-build:active, button.no-build:focus {
+    background-color: $noBuildColor;
+    border: 0;
+    color: $btnTextColor;
+  }
+  
+  .help-candle.no-build {
+    background-color: clear;
+    color: $noBuildColor;
+  }
+}
+
+.plate {
+  display: flex;
+  flex-direction: column;
+  width: $plateWidth;
+  height: $plateHeight;
+  z-index: 20;
+}
+
+.plate-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.plate-top {
+  width: $plateWidth / 2;
+  height: $plateHeight / 2;
+  background-color: $plateColor;
+  flex: 2;
+}
+
+.plate-base {
+  width: 75%;
+  height: 50%;
+  background-color: $plateColor;
+}
+
+.plate-left {
+  width: $plateHeight;
+  height: $plateHeight / 2;
+  border-top: ($plateHeight / 4) solid $plateColor;
+  border-right: ($plateHeight / 2) solid $plateColor;
+  border-bottom: ($plateHeight / 4) solid rgba(0, 0, 0, 0);
+  border-left: ($plateHeight / 2) solid rgba(0, 0, 0, 0);
+  flex: 0;
+}
+
+.plate-right {
+  width: $plateHeight;
+  height: $plateHeight / 2;
+  border-top: ($plateHeight / 4) solid $plateColor;
+  border-right: ($plateHeight / 2) solid rgba(0, 0, 0, 0);
+  border-bottom: ($plateHeight / 4) solid rgba(0, 0, 0, 0);
+  border-left: ($plateHeight / 2) solid $plateColor;
+  flex: 0;
+}
+
+.plate-rod{
+  width: 50px;
+  height: 50px;
+  color: $plateColor;
+  z-index: 20;
+}
+
+
+/* Frosting Flavors */
+
+.chocolate {
+  background-color: #B98764;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #553624;
+  }
+}
+
+.chocolate:hover, .chocolate:focus {
+  background-color: #cba57d;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #6b432d;
+  }
+}
+
+.vanilla {
+  background-color: #f3eee0;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #b98764;
+  }
+}
+
+.vanilla:hover, .vanilla:focus {
+  background-color: #f6f2e8;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #cba57d;
+  }
+}
+
+.mint {
+  background-color: #c3fbcc;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #17b733;
+  }
+}
+
+.mint:hover, .mint:focus {
+  background-color: #d2fcd9;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #1dc940;
+  }
+}
+
+.strawberry {
+  background-color: rgb(247, 221, 223);
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #e61f2b;
+  }
+}
+
+.strawberry:hover, .strawberry:focus {
+  background-color: #fdb3bd;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #ec2736;
+  }
+}
+
+.lemon {
+  background-color: #FEF37C;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #fcb501;
+  }
+}
+
+.lemon:hover, .lemon:focus {
+  background-color: #fef69b;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #fdc802;
+  }
+}
+
+.orange {
+  background-color: #ffc153;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #f6721a;
+  }
+}
+
+.orange:hover, .orange:focus {
+  background-color: #ffd168;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #f88e20;
+  }
+}
+
+.coffee {
+  background-color: #E4C494;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #92703b;
+  }
+}
+
+.coffee:hover, .coffee:focus {
+  background-color: #ebd3af;
+  
+  .frosting-part, .frosting-part-small {
+    background-color: #ad8c4a;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  #container {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-height: 640px) and (orientation: portrait) {
+  #container {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-height: 420px) and (orientation: landscape) {
+  #container {
+    top: 100%;
+  }
+}
+
+@media screen and (max-height: 320px) and (orientation: landscape) {
+  #container {
+    top: 120%;
+  }
+}
