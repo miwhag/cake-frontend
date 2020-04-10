@@ -1,1 +1,364 @@
-/* No CSS *//*# sourceMappingURL=CakeModel.css.map */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#control-container {
+  height: 12%;
+}
+
+.cake {
+  width: 275px;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  z-index: 5;
+}
+
+.cake-layer {
+  width: 275px;
+  height: 90px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-animation: cakeAppear 0.5s;
+          animation: cakeAppear 0.5s;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.cake-layer:focus {
+  outline: 0;
+}
+
+.cake-layer::-moz-focus-inner {
+  border: 0;
+}
+
+@-webkit-keyframes cakeAppear {
+  0% {
+    height: 90px;
+  }
+  10% {
+    height: 64.28571px;
+  }
+  100% {
+    height: 90px;
+  }
+}
+
+@keyframes cakeAppear {
+  0% {
+    height: 90px;
+  }
+  10% {
+    height: 64.28571px;
+  }
+  100% {
+    height: 90px;
+  }
+}
+
+.cake-controls {
+  padding-bottom: 10em;
+  width: 275px;
+  color: #DDD;
+}
+
+.cake-controls button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EEE;
+  border: #f0eaea 1px solid;
+  color: #a5a2a2;
+  font-size: 20px;
+  margin: 10px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.cake-controls button:hover {
+  background-color: #FFD;
+  border-color: #DDB;
+}
+
+.cake-controls button:active {
+  background-color: #CCC;
+  border-color: #999;
+}
+
+.cake-controls button:focus {
+  outline: 0;
+  border-color: #FFBB00;
+}
+
+.cake-controls button::-moz-focus-inner {
+  border: 0;
+}
+
+.cake-controls .direction-controls {
+  position: absolute;
+}
+
+.cake-controls .btn-up {
+  left: 0;
+  top: -40px;
+}
+
+.cake-controls .btn-down {
+  left: 0;
+  top: 40px;
+}
+
+.cake-controls .btn-wide {
+  left: 40px;
+  top: 0;
+}
+
+.cake-controls .btn-narrow {
+  left: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+}
+
+.cake-controls button.no-build, .cake-controls .no-build .help-candle-base, .cake-controls button.no-build:hover, .cake-controls button.no-build:active, .cake-controls button.no-build:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  color: #444;
+}
+
+.cake-controls .help-candle.no-build {
+  background-color: clear;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.plate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  height: 40px;
+  z-index: 20;
+}
+
+.plate-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.plate-top {
+  width: 140px;
+  height: 20px;
+  background-color: #bdc1d3;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.plate-base {
+  width: 75%;
+  height: 50%;
+  background-color: #bdc1d3;
+}
+
+.plate-left {
+  width: 40px;
+  height: 20px;
+  border-top: 10px solid #bdc1d3;
+  border-right: 20px solid #bdc1d3;
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  border-left: 20px solid rgba(0, 0, 0, 0);
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.plate-right {
+  width: 40px;
+  height: 20px;
+  border-top: 10px solid #bdc1d3;
+  border-right: 20px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  border-left: 20px solid #bdc1d3;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.plate-rod {
+  width: 50px;
+  height: 50px;
+  color: #bdc1d3;
+  z-index: 20;
+}
+
+/* Frosting Flavors */
+.chocolate {
+  background-color: #B98764;
+}
+
+.chocolate .frosting-part, .chocolate .frosting-part-small {
+  background-color: #553624;
+}
+
+.chocolate:hover, .chocolate:focus {
+  background-color: #cba57d;
+}
+
+.chocolate:hover .frosting-part, .chocolate:hover .frosting-part-small, .chocolate:focus .frosting-part, .chocolate:focus .frosting-part-small {
+  background-color: #6b432d;
+}
+
+.vanilla {
+  background-color: #f3eee0;
+}
+
+.vanilla .frosting-part, .vanilla .frosting-part-small {
+  background-color: #b98764;
+}
+
+.vanilla:hover, .vanilla:focus {
+  background-color: #f6f2e8;
+}
+
+.vanilla:hover .frosting-part, .vanilla:hover .frosting-part-small, .vanilla:focus .frosting-part, .vanilla:focus .frosting-part-small {
+  background-color: #cba57d;
+}
+
+.mint {
+  background-color: #c3fbcc;
+}
+
+.mint .frosting-part, .mint .frosting-part-small {
+  background-color: #17b733;
+}
+
+.mint:hover, .mint:focus {
+  background-color: #d2fcd9;
+}
+
+.mint:hover .frosting-part, .mint:hover .frosting-part-small, .mint:focus .frosting-part, .mint:focus .frosting-part-small {
+  background-color: #1dc940;
+}
+
+.strawberry {
+  background-color: #f7dddf;
+}
+
+.strawberry .frosting-part, .strawberry .frosting-part-small {
+  background-color: #e61f2b;
+}
+
+.strawberry:hover, .strawberry:focus {
+  background-color: #fdb3bd;
+}
+
+.strawberry:hover .frosting-part, .strawberry:hover .frosting-part-small, .strawberry:focus .frosting-part, .strawberry:focus .frosting-part-small {
+  background-color: #ec2736;
+}
+
+.lemon {
+  background-color: #FEF37C;
+}
+
+.lemon .frosting-part, .lemon .frosting-part-small {
+  background-color: #fcb501;
+}
+
+.lemon:hover, .lemon:focus {
+  background-color: #fef69b;
+}
+
+.lemon:hover .frosting-part, .lemon:hover .frosting-part-small, .lemon:focus .frosting-part, .lemon:focus .frosting-part-small {
+  background-color: #fdc802;
+}
+
+.orange {
+  background-color: #ffc153;
+}
+
+.orange .frosting-part, .orange .frosting-part-small {
+  background-color: #f6721a;
+}
+
+.orange:hover, .orange:focus {
+  background-color: #ffd168;
+}
+
+.orange:hover .frosting-part, .orange:hover .frosting-part-small, .orange:focus .frosting-part, .orange:focus .frosting-part-small {
+  background-color: #f88e20;
+}
+
+.coffee {
+  background-color: #E4C494;
+}
+
+.coffee .frosting-part, .coffee .frosting-part-small {
+  background-color: #92703b;
+}
+
+.coffee:hover, .coffee:focus {
+  background-color: #ebd3af;
+}
+
+.coffee:hover .frosting-part, .coffee:hover .frosting-part-small, .coffee:focus .frosting-part, .coffee:focus .frosting-part-small {
+  background-color: #ad8c4a;
+}
+
+@media screen and (max-height: 800px) {
+  #container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media screen and (max-height: 640px) and (orientation: portrait) {
+  #container {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@media screen and (max-height: 420px) and (orientation: landscape) {
+  #container {
+    top: 100%;
+  }
+}
+
+@media screen and (max-height: 320px) and (orientation: landscape) {
+  #container {
+    top: 120%;
+  }
+}
+/*# sourceMappingURL=CakeModel.css.map */

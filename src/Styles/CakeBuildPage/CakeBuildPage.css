@@ -105,10 +105,14 @@ table {
   margin-bottom: 30px;
 }
 
-#CakeBuildPage-container main #cake-image-container {
+#CakeBuildPage-container main #cake-model-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -116,9 +120,6 @@ table {
       -ms-flex-align: center;
           align-items: center;
   width: 50em;
-}
-
-#CakeBuildPage-container main #cake-image-container #cake-img {
-  height: 40em;
+  background-color: white;
 }
 /*# sourceMappingURL=CakeBuildPage.css.map */

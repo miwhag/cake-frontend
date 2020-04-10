@@ -36,14 +36,15 @@
             }
         }
     }
-      #cake-image-container{
+      #cake-model-container{
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           width: 50em;
-          #cake-img{
-          height: 40em;
-      }
+          background-color: white;
+   
+          
     }
 
 

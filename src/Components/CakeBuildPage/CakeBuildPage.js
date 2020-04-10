@@ -48,8 +48,7 @@ export default class CakeBuildPage extends Component {
         return (
             <div id="CakeBuildPage-container">
                 <main>
-                    <section id="cake-image-container">
-                    <img id="cake-img" src="https://i.ibb.co/n1YL2gJ/templatecake.jpg" alt="cake" />
+                    <section id="cake-model-container">
                     <CakeModel/>
                     </section>
 
