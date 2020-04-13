@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Cake from './Cake'
 import Plate from './Plate'
 import CakeControls from './CakeControls'
 import CakeLayer from './CakeLayer'
@@ -18,13 +17,10 @@ export default class CakeModel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          layers: 2,
-          candles: 3,
+          layers: 3,
           width: START_WIDTH,
-          candlesBlownOut: false,
           canBuild: true,
-          eating: false,
-          eatTimer: -1
+        
          };
         this.addLayer = this.addLayer.bind(this);
         this.removeLayer = this.removeLayer.bind(this);
@@ -46,7 +42,7 @@ export default class CakeModel extends Component {
       removeLayer() {
         if (this.state.canBuild && this.state.layers > 0) {
           this.setState((prevState, props) => ({
-            layers: Math.max(prevState.layers - 1, 1)
+            layers: Math.max(prevState.layers - 1, 0)
           }));
         }
       }
@@ -77,15 +73,31 @@ export default class CakeModel extends Component {
             }
             
         return (
+          <>
+          <div id="cake-slice-container">
+
+            <div id="cake-layer-section">
+            <div className="cake-layer-slice"></div>
+            <div className="frosting-layer-slice"></div>
+            <div className="cake-layer-slice"></div>
+            <div className="frosting-layer-slice"></div>
+            <div className="cake-layer-slice"></div>
+          </div>
+
+            </div>
+
+
             <div className="container">
-                <div id="control-container">
-                    <CakeControls addLayer={this.addLayer} removeWidth={this.removeWidth} addWidth={this.addWidth} canBuild={this.state.canBuild} removeLayer={this.removeLayer}/>
-                </div>
                 <div className="cake">
                     {renderedLayers}
                 </div>
                 <Plate />  
             </div>
+
+            <CakeControls addLayer={this.addLayer} removeWidth={this.removeWidth} addWidth={this.addWidth} canBuild={this.state.canBuild} removeLayer={this.removeLayer}/>
+
+
+            </>
         ) 
     }
     

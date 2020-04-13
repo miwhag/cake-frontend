@@ -13,7 +13,7 @@ export default function Plate(props) {
         <div className="plate-base"></div>
       </div>
     </div>
-  <div className="plate-rod"></div>
+
     </>
   );
 }
