@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 
-$containerHeight: 600px;
+$containerHeight: 500px;
 $cakeLayerWidth: 275px;
 $cakeLayerHeight: 90px;
 $buttonSize: 40px;
@@ -14,19 +14,44 @@ $plateColor: rgb(189, 193, 211);
 .container{
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 100%;
-  justify-content: center;
+  height: 100%;
+  margin-top: -350px;
+  justify-content: flex-end;
   align-items: center;
 }
 
-#control-container{
-height: 12%;
+#cake-slice-container{
+  display: flex;
+  align-items: center;
+  height: 5em;
 }
+
+#cake-layer-section{
+  width: 100px;
+  margin: 7em;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .cake-layer-slice{
+    background-color: rgb(51, 29, 8);
+    background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+    height: 20px;
+    width: 100px;
+  }
+
+  .frosting-layer-slice{
+   background-color: pink;
+   height: 20px;
+   width: 100px;
+  
+  }
+}
+
 
 .cake {
   width: $cakeLayerWidth;
-  height: 45%;
+  height: 55%;
   display: flex;
   flex-direction: column-reverse;
   z-index: 5;
@@ -58,13 +83,10 @@ height: 12%;
 .cake-controls {
   $btnTextColor: #444;
   $btnFocusColor: #FFBB00;
-  padding-bottom: 10em;
-  width: $cakeLayerWidth;
   color: #DDD;
   
    
   button {
-    position: absolute;
     width: $buttonSize;
     height: $buttonSize;
     border-radius: 50%;
@@ -72,7 +94,6 @@ height: 12%;
     border: rgb(240, 234, 234) 1px solid;
     color: rgb(165, 162, 162);
     font-size: 20px;
-    margin: $buttonMargin;
     transition: 0.1s;
   }
   
@@ -96,33 +117,12 @@ height: 12%;
   }
   
   .direction-controls {
-    position: absolute;
+   display: flex;
   }
   
-  .btn-up {
-    left: 0;
-    top: -40px;
-  }
+
   
-  .btn-down {
-    left: 0;
-    top: 40px;
-  }
-  
-  .btn-wide {
-    left: 40px;
-    top: 0;
-  }
-  
-  .btn-narrow {
-    left: -40px;
-    display: flex;
-    top: 0;
-  }
-  
- 
-  
-  
+
   $noBuildColor: rgba(0, 0, 0, 0.5);
   
   button.no-build, .no-build .help-candle-base, button.no-build:hover, button.no-build:active, button.no-build:focus {

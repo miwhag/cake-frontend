@@ -7,23 +7,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100%;
+  margin-top: -350px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#control-container {
-  height: 12%;
+#cake-slice-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5em;
+}
+
+#cake-layer-section {
+  width: 100px;
+  margin: 7em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#cake-layer-section .cake-layer-slice {
+  background-color: #331d08;
+  background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+  height: 20px;
+  width: 100px;
+}
+
+#cake-layer-section .frosting-layer-slice {
+  background-color: pink;
+  height: 20px;
+  width: 100px;
 }
 
 .cake {
   width: 275px;
-  height: 45%;
+  height: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,13 +104,10 @@
 }
 
 .cake-controls {
-  padding-bottom: 10em;
-  width: 275px;
   color: #DDD;
 }
 
 .cake-controls button {
-  position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -91,7 +115,6 @@
   border: #f0eaea 1px solid;
   color: #a5a2a2;
   font-size: 20px;
-  margin: 10px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -116,30 +139,9 @@
 }
 
 .cake-controls .direction-controls {
-  position: absolute;
-}
-
-.cake-controls .btn-up {
-  left: 0;
-  top: -40px;
-}
-
-.cake-controls .btn-down {
-  left: 0;
-  top: 40px;
-}
-
-.cake-controls .btn-wide {
-  left: 40px;
-  top: 0;
-}
-
-.cake-controls .btn-narrow {
-  left: -40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
 }
 
 .cake-controls button.no-build, .cake-controls .no-build .help-candle-base, .cake-controls button.no-build:hover, .cake-controls button.no-build:active, .cake-controls button.no-build:focus {

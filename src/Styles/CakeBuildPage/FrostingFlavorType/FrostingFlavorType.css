@@ -57,28 +57,65 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
-  padding: 30px;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
   width: 45em;
+  padding: 0px;
+  margin-top: 15px;
+  z-index: 1;
+  position: relative;
 }
 
 #FrostingFlavorTypeCard-container {
-  width: 130px;
-  height: 140px;
-  margin: 6px;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
   text-align: center;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f2f7;
+  margin: 15px;
+  z-index: 20;
 }
 
-#FrostingFlavorTypeCard-container p {
-  padding: 15px;
-  font-size: 15px;
-  color: black;
+#FrostingFlavorTypeCard-container #frosting-flavor {
+  padding-top: 2px;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+#FrostingFlavorTypeCard-container #frosting-type {
+  padding: 0px;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #2e2e2e;
+  width: 100px;
 }
 
 #FrostingFlavorTypeCard-container .FrostingFlavorType-image {
-  width: 70px;
-  border-radius: 10px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#checkmark {
+  width: 40px;
+  z-index: 3;
 }
 
 #filter-frostingtype-form {
@@ -91,7 +128,7 @@ table {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 1em;
+  padding-top: 10px;
 }
 
 #filter-frostingtype-form h1 {

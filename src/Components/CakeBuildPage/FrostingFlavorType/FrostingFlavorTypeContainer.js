@@ -10,6 +10,13 @@ export default class FrostingFlavorTypeContainer extends Component{
     }
 
 
+    componentWillReceiveProps(nextProps){
+        if(nextProps.frosting_flavor_type !== this.props.frosting_flavor_type){
+            this.setState({filtered_flavors:nextProps.frosting_flavor_type});
+        }
+    }
+
+    
     handleFilter = (e) => {
         const filtered = this.props.frosting_flavor_type.filter(frosting => {
            if(e.target.value === frosting.frosting_type.name){
@@ -21,12 +28,14 @@ export default class FrostingFlavorTypeContainer extends Component{
 
 
     displayFrostingFlavors = () => { 
+        
         return this.state.filtered_flavors.map(flavor => 
         <FrostingFlavorTypeCard key={flavor.id} frosting_flavor={flavor.frosting_flavors.name} image={flavor.image} frosting_type={flavor.frosting_type.name} />
         )}
         
    
     showFilterOptions = () => {
+        console.log(this.props)
         return this.props.frosting_type.map(frosting => {
             return <option key={frosting.id} className="FrostingFlavorTypeContainer-option">{frosting.name}</option>
         })
