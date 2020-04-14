@@ -17,7 +17,7 @@ export default class FrostingFlavorTypeCard extends Component {
     handleOpacityClick = () => {
         if(this.state.opacity === false){
             this.setState({
-                opacity_set: "0.2", 
+                opacity_set: "0.4", 
                 opacity: true
             })
         }else {
@@ -48,9 +48,12 @@ export default class FrostingFlavorTypeCard extends Component {
         }
     }
 
+
+    
     handleClick = () => {
         this.handleCheckMark()
         this.handleOpacityClick()
+        this.props.updateFrostingColor(this.props.frosting_color)
     }
 
 

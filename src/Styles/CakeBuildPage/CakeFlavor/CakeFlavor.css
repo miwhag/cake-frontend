@@ -54,29 +54,56 @@ table {
 #CakeFlavorsContainer-main-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
   margin: 30px 10px 10px 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 45em;
+  position: relative;
 }
 
 .CakeFlavorCard-container {
-  width: 100px;
-  height: 100px;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
   text-align: center;
-  margin: 13px;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f2f7;
+  margin: 15px;
+  z-index: 20;
 }
 
 .CakeFlavorCard-container p {
-  margin: 10px 0px 10px 0px;
+  padding-top: 2px;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #2e2e2e;
 }
 
 .CakeFlavorCard-container .CakeFlavorCard-image {
-  width: 70px;
-  border-radius: 10px;
-  margin-top: 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#checkmark {
+  width: 40px;
+  z-index: 3;
 }
 /*# sourceMappingURL=CakeFlavor.css.map */

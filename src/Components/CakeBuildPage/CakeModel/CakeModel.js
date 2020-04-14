@@ -3,7 +3,7 @@ import Plate from './Plate'
 import CakeControls from './CakeControls'
 import CakeLayer from './CakeLayer'
 import '../../../Styles/CakeBuildPage/CakeModel/CakeModel.scss'
-
+import CakeSlice from './CakeSlice'
 
 const MAX_LAYERS = 3;
 // Width in pixels of the bottom cake layer
@@ -74,18 +74,9 @@ export default class CakeModel extends Component {
             
         return (
           <>
-          <div id="cake-slice-container">
 
-            <div id="cake-layer-section">
-            <div className="cake-layer-slice"></div>
-            <div className="frosting-layer-slice"></div>
-            <div className="cake-layer-slice"></div>
-            <div className="frosting-layer-slice"></div>
-            <div className="cake-layer-slice"></div>
-          </div>
-
-            </div>
-
+            <CakeSlice cake_color={this.props.cake_color} frosting_color={this.props.frosting_color}/>
+            
 
             <div className="container">
                 <div className="cake">

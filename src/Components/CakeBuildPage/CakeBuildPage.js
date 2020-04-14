@@ -16,7 +16,9 @@ export default class CakeBuildPage extends Component {
             frosting_type: [],
             frosting_flavor_type: [],
             cake_flavors: [],
-            finish_type: []
+            finish_type: [],
+            cake_layer_color: '#442727',
+            frosting_layer_color: '#fde2e2'
         }
 
         componentDidMount(){
@@ -42,14 +44,26 @@ export default class CakeBuildPage extends Component {
             .then(result => this.setState({finish_type: result.finish_type}))
             )}
 
-            
+
+            updateCakeColor = (cakeColor) => {
+                this.setState({
+                    cake_layer_color: cakeColor
+                })
+            }
+        
+            updateFrostingColor = (frostingColor) => {
+                this.setState({
+                    frosting_layer_color: frostingColor
+                })
+            }
+   
 
     render() {
         return (
             <div id="CakeBuildPage-container">
                 <main>
                     <section id="cake-model-container">
-                    <CakeModel/>
+                    <CakeModel cake_color={this.state.cake_layer_color} frosting_color={this.state.frosting_layer_color}/>
                     </section>
 
                     <section id="cake-build-container">
@@ -66,11 +80,16 @@ export default class CakeBuildPage extends Component {
                                 </TabList>
                             
                                 <TabPanel>
-                                    <CakeFlavorsContainer cake_flavors={this.state.cake_flavors} />
+                                    <CakeFlavorsContainer cake_flavors={this.state.cake_flavors} updateCakeColor={this.updateCakeColor}
+ />
                                 </TabPanel>
 
                                 <TabPanel>
-                                    <FrostingFlavorTypeContainer frosting_flavor_type={this.state.frosting_flavor_type} frosting_type={this.state.frosting_type}/>
+                                    <FrostingFlavorTypeContainer 
+                                    frosting_flavor_type={this.state.frosting_flavor_type} 
+                                    frosting_type={this.state.frosting_type}
+                                    updateFrostingColor={this.updateFrostingColor}
+                                    />
                                 </TabPanel>
 
                                 <TabPanel>
