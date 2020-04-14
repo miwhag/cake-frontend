@@ -5,6 +5,7 @@ import CakeFlavorsContainer from './CakeFlavors/CakeFlavorsContainer'
 import FrostingFlavorTypeContainer from './FrostingFlavorType/FrostingFlavorTypeContainer'
 import AboutFinishTypeContainer from './AboutFinishType/AboutFinishTypeContainer'
 import CakeModel from './CakeModel/CakeModel'
+import FinishTypeContainer from './FinishType/FinishTypeContainer'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -17,8 +18,12 @@ export default class CakeBuildPage extends Component {
             frosting_flavor_type: [],
             cake_flavors: [],
             finish_type: [],
+            cake: [],
+            frosting: [],
             cake_layer_color: '#442727',
-            frosting_layer_color: '#fde2e2'
+            cake_color_changed: false,
+            frosting_layer_color: '#fde2e2',
+            frosting_color_change: false
         }
 
         componentDidMount(){
@@ -45,16 +50,26 @@ export default class CakeBuildPage extends Component {
             )}
 
 
-            updateCakeColor = (cakeColor) => {
-                this.setState({
-                    cake_layer_color: cakeColor
-                })
+            updateCakeColor = (cakeObject) => {
+                if(this.state.cake_color_changed === false || this.state.cake !== cakeObject.id){
+                    this.setState({
+                        cake_layer_color: cakeObject.cake_color,
+                        cake_color_changed: true,
+                        cake: cakeObject
+                    })
+                }
             }
         
-            updateFrostingColor = (frostingColor) => {
+            updateFrostingColor = (frostingObject) => {
+                console.log(frostingObject)
+                if(this.state.frosting_color_change === false || this.state.frosting !== frostingObject.id){
                 this.setState({
-                    frosting_layer_color: frostingColor
+                    frosting_layer_color: frostingObject.frosting_color,
+                    frosting_color_change: true, 
+                    frosting: frostingObject
                 })
+
+            }
             }
    
 
@@ -76,11 +91,15 @@ export default class CakeBuildPage extends Component {
                                 <TabList>
                                     <Tab>Cake Flavors</Tab>
                                     <Tab>Frosting Flavors</Tab>
+                                    <Tab>Finish Type</Tab>
                                     <Tab>Cake Info</Tab>
                                 </TabList>
                             
                                 <TabPanel>
-                                    <CakeFlavorsContainer cake_flavors={this.state.cake_flavors} updateCakeColor={this.updateCakeColor}
+                                    <CakeFlavorsContainer 
+                                    cake={this.state.cake} 
+                                    cake_flavors={this.state.cake_flavors} 
+                                    updateCakeColor={this.updateCakeColor}
  />
                                 </TabPanel>
 
@@ -88,7 +107,13 @@ export default class CakeBuildPage extends Component {
                                     <FrostingFlavorTypeContainer 
                                     frosting_flavor_type={this.state.frosting_flavor_type} 
                                     frosting_type={this.state.frosting_type}
+                                    frosting={this.state.frosting}
                                     updateFrostingColor={this.updateFrostingColor}
+                                    />
+                                </TabPanel>
+
+                                <TabPanel>
+                                    <FinishTypeContainer finish_type={this.state.finish_type}
                                     />
                                 </TabPanel>
 

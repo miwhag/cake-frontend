@@ -31,18 +31,19 @@ export default class FrostingFlavorTypeContainer extends Component{
         
         return this.state.filtered_flavors.map(flavor => 
         <FrostingFlavorTypeCard 
+        frosting={flavor}
         key={flavor.id} 
         frosting_flavor={flavor.frosting_flavors.name} 
         image={flavor.image} 
         frosting_type={flavor.frosting_type.name} 
         frosting_color={flavor.frosting_color}
         updateFrostingColor={this.props.updateFrostingColor}
+        checked={flavor.id === this.props.frosting.id}
         />
         )}
         
    
     showFilterOptions = () => {
-        console.log(this.props)
         return this.props.frosting_type.map(frosting => {
             return <option key={frosting.id} className="FrostingFlavorTypeContainer-option">{frosting.name}</option>
         })
