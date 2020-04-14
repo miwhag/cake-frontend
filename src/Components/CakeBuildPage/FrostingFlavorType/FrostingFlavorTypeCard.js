@@ -14,63 +14,26 @@ export default class FrostingFlavorTypeCard extends Component {
         position: ""
     }
 
-    handleOpacityClick = () => {
-        if(this.state.opacity === false){
-            this.setState({
-                opacity_set: "0.4", 
-                opacity: true
-            })
-        }else {
-                this.setState({
-                opacity_set: "", 
-                opacity: false
-            })
-        }
-    }
-
-    handleCheckMark = () => {
-        if(this.state.checkmark === false){
-            this.setState({
-                display: "", 
-                checkmark: true,
-                checkmark_opacity: "1",
-                z_index: "10", 
-                position: "absolute"
-            })
-        }else {
-                this.setState({
-                display: "none", 
-                checkmark: false,
-                checkmark_opacity: "0",
-                z_index: "", 
-                position: ""
-            })
-        }
-    }
-
-
-    
     handleClick = () => {
-        this.handleCheckMark()
-        this.handleOpacityClick()
-        this.props.updateFrostingColor(this.props.frosting_color)
+        this.props.updateFrostingColor(this.props.frosting)
     }
-
-
 
     render() {
-        const {frosting_flavor, image, frosting_type} = this.props;
+        const {frosting_flavor, image, frosting_type, checked} = this.props;
         return (
             <div id="FrostingFlavor-main-container">
-
-                <img id="checkmark" 
-                    src="https://i.ibb.co/5KW8fJ3/checkmark.png" 
-                    alt="checkmark"
-                    style={{display: this.state.display, opacity: this.state.checkmark_opacity_set, zIndex: this.state.z_index, position: this.state.position}}
-                />
-
+                {checked ? 
+                    <img id="checkmark" 
+                        src="https://i.ibb.co/5KW8fJ3/checkmark.png" 
+                        alt="checkmark"
+                        style={{
+                            position: "absolute"
+                        }}
+                    />
+                : null }
+                
                 <div id="FrostingFlavorTypeCard-container" 
-                    style={{opacity: this.state.opacity_set, zIndex: this.state.z_index}} 
+                    style={{opacity: checked ? 0.3 : 1}} 
                     onClick={()=> this.handleClick()}>    
 
                     <img className="FrostingFlavorType-image" src={image} alt={frosting_flavor}/>
