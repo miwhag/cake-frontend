@@ -31,19 +31,16 @@
 #cake-layer-section {
   width: 100px;
   margin: 7em;
-  border-radius: 10px;
+  border-radius: 50%;
   overflow: hidden;
 }
 
 #cake-layer-section .cake-layer-slice {
-  background-color: #331d08;
-  background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
   height: 20px;
   width: 100px;
 }
 
 #cake-layer-section .frosting-layer-slice {
-  background-color: pink;
   height: 20px;
   width: 100px;
 }
@@ -68,15 +65,10 @@
   transition: 0.1s;
   -webkit-animation: cakeAppear 0.5s;
           animation: cakeAppear 0.5s;
-  border-radius: 8px 8px 0px 0px;
-}
-
-.cake-layer:focus {
-  outline: 0;
-}
-
-.cake-layer::-moz-focus-inner {
-  border: 0;
+  border: 1px solid #e7dcdc;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #faeaea;
 }
 
 @-webkit-keyframes cakeAppear {
@@ -105,6 +97,7 @@
 
 .cake-controls {
   color: #DDD;
+  padding: 5px;
 }
 
 .cake-controls button {
@@ -117,6 +110,7 @@
   font-size: 20px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  margin: 5px;
 }
 
 .cake-controls button:hover {
@@ -142,6 +136,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5px;
 }
 
 .cake-controls button.no-build, .cake-controls .no-build .help-candle-base, .cake-controls button.no-build:hover, .cake-controls button.no-build:active, .cake-controls button.no-build:focus {
@@ -216,126 +211,6 @@
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
-}
-
-.plate-rod {
-  width: 50px;
-  height: 50px;
-  color: #bdc1d3;
-  z-index: 20;
-}
-
-/* Frosting Flavors */
-.chocolate {
-  background-color: #B98764;
-}
-
-.chocolate .frosting-part, .chocolate .frosting-part-small {
-  background-color: #553624;
-}
-
-.chocolate:hover, .chocolate:focus {
-  background-color: #cba57d;
-}
-
-.chocolate:hover .frosting-part, .chocolate:hover .frosting-part-small, .chocolate:focus .frosting-part, .chocolate:focus .frosting-part-small {
-  background-color: #6b432d;
-}
-
-.vanilla {
-  background-color: #f3eee0;
-}
-
-.vanilla .frosting-part, .vanilla .frosting-part-small {
-  background-color: #b98764;
-}
-
-.vanilla:hover, .vanilla:focus {
-  background-color: #f6f2e8;
-}
-
-.vanilla:hover .frosting-part, .vanilla:hover .frosting-part-small, .vanilla:focus .frosting-part, .vanilla:focus .frosting-part-small {
-  background-color: #cba57d;
-}
-
-.mint {
-  background-color: #c3fbcc;
-}
-
-.mint .frosting-part, .mint .frosting-part-small {
-  background-color: #17b733;
-}
-
-.mint:hover, .mint:focus {
-  background-color: #d2fcd9;
-}
-
-.mint:hover .frosting-part, .mint:hover .frosting-part-small, .mint:focus .frosting-part, .mint:focus .frosting-part-small {
-  background-color: #1dc940;
-}
-
-.strawberry {
-  background-color: #f7dddf;
-}
-
-.strawberry .frosting-part, .strawberry .frosting-part-small {
-  background-color: #e61f2b;
-}
-
-.strawberry:hover, .strawberry:focus {
-  background-color: #fdb3bd;
-}
-
-.strawberry:hover .frosting-part, .strawberry:hover .frosting-part-small, .strawberry:focus .frosting-part, .strawberry:focus .frosting-part-small {
-  background-color: #ec2736;
-}
-
-.lemon {
-  background-color: #FEF37C;
-}
-
-.lemon .frosting-part, .lemon .frosting-part-small {
-  background-color: #fcb501;
-}
-
-.lemon:hover, .lemon:focus {
-  background-color: #fef69b;
-}
-
-.lemon:hover .frosting-part, .lemon:hover .frosting-part-small, .lemon:focus .frosting-part, .lemon:focus .frosting-part-small {
-  background-color: #fdc802;
-}
-
-.orange {
-  background-color: #ffc153;
-}
-
-.orange .frosting-part, .orange .frosting-part-small {
-  background-color: #f6721a;
-}
-
-.orange:hover, .orange:focus {
-  background-color: #ffd168;
-}
-
-.orange:hover .frosting-part, .orange:hover .frosting-part-small, .orange:focus .frosting-part, .orange:focus .frosting-part-small {
-  background-color: #f88e20;
-}
-
-.coffee {
-  background-color: #E4C494;
-}
-
-.coffee .frosting-part, .coffee .frosting-part-small {
-  background-color: #92703b;
-}
-
-.coffee:hover, .coffee:focus {
-  background-color: #ebd3af;
-}
-
-.coffee:hover .frosting-part, .coffee:hover .frosting-part-small, .coffee:focus .frosting-part, .coffee:focus .frosting-part-small {
-  background-color: #ad8c4a;
 }
 
 @media screen and (max-height: 800px) {

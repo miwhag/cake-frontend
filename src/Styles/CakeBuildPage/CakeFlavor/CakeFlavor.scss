@@ -4,26 +4,44 @@
 
 #CakeFlavorsContainer-main-container{
 display: grid;
-grid-template-columns: repeat(5, auto);
+grid-template-columns: repeat(4, auto);
 margin: 30px 10px 10px 10px;
 justify-content: center;
 width: 45em;
+position: relative;
 }
 
 .CakeFlavorCard-container{
-    width: 100px;
-    height: 100px;
+   
+    width: 170px;
+    height: 170px;
+    margin: 10px;
     text-align: center;
-    margin: 13px;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 242, 247);
+    margin:15px;
+    z-index: 20;
+
     p{
-        margin: 10px 0px 10px 0px;
+        padding-top: 2px;
+        margin-top: 8px;
+        font-size: 15px;
+        color: rgb(46, 46, 46);
     }
 
     .CakeFlavorCard-image{
-        width: 70px;
-        border-radius: 10px;
-        margin-top: 20px;
+        width:80px;
+        border-radius: 50%;
     }
 
 }
 
+#checkmark{
+    width: 40px;
+    z-index: 3;
+}

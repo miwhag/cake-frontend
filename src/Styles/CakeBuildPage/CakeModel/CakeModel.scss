@@ -30,18 +30,16 @@ $plateColor: rgb(189, 193, 211);
 #cake-layer-section{
   width: 100px;
   margin: 7em;
-  border-radius: 10px;
+  border-radius: 50%;
   overflow: hidden;
 
   .cake-layer-slice{
-    background-color: rgb(51, 29, 8);
-    background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+    // background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
     height: 20px;
     width: 100px;
   }
 
   .frosting-layer-slice{
-   background-color: pink;
    height: 20px;
    width: 100px;
   
@@ -62,17 +60,13 @@ $plateColor: rgb(189, 193, 211);
   height: $cakeLayerHeight;
   transition: 0.1s;
   animation: cakeAppear 0.5s;
-  // border: 3 solid grey;
-  border-radius: 8px 8px 0px 0px;
+  border: 1px solid rgb(231, 220, 220);
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(250, 234, 234);
 }
 
-.cake-layer:focus {
-  outline: 0;
-}
 
-.cake-layer::-moz-focus-inner {
-  border: 0;
-}
 
 @keyframes cakeAppear {
   0% { height: $cakeLayerHeight; }
@@ -84,6 +78,7 @@ $plateColor: rgb(189, 193, 211);
   $btnTextColor: #444;
   $btnFocusColor: #FFBB00;
   color: #DDD;
+  padding: 5px;
   
    
   button {
@@ -95,6 +90,7 @@ $plateColor: rgb(189, 193, 211);
     color: rgb(165, 162, 162);
     font-size: 20px;
     transition: 0.1s;
+    margin: 5px;
   }
   
   button:hover {
@@ -118,6 +114,7 @@ $plateColor: rgb(189, 193, 211);
   
   .direction-controls {
    display: flex;
+   margin-top: 5px;
   }
   
 
@@ -185,127 +182,8 @@ $plateColor: rgb(189, 193, 211);
   flex: 0;
 }
 
-.plate-rod{
-  width: 50px;
-  height: 50px;
-  color: $plateColor;
-  z-index: 20;
-}
 
 
-/* Frosting Flavors */
-
-.chocolate {
-  background-color: #B98764;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #553624;
-  }
-}
-
-.chocolate:hover, .chocolate:focus {
-  background-color: #cba57d;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #6b432d;
-  }
-}
-
-.vanilla {
-  background-color: #f3eee0;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #b98764;
-  }
-}
-
-.vanilla:hover, .vanilla:focus {
-  background-color: #f6f2e8;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #cba57d;
-  }
-}
-
-.mint {
-  background-color: #c3fbcc;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #17b733;
-  }
-}
-
-.mint:hover, .mint:focus {
-  background-color: #d2fcd9;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #1dc940;
-  }
-}
-
-.strawberry {
-  background-color: rgb(247, 221, 223);
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #e61f2b;
-  }
-}
-
-.strawberry:hover, .strawberry:focus {
-  background-color: #fdb3bd;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #ec2736;
-  }
-}
-
-.lemon {
-  background-color: #FEF37C;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #fcb501;
-  }
-}
-
-.lemon:hover, .lemon:focus {
-  background-color: #fef69b;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #fdc802;
-  }
-}
-
-.orange {
-  background-color: #ffc153;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #f6721a;
-  }
-}
-
-.orange:hover, .orange:focus {
-  background-color: #ffd168;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #f88e20;
-  }
-}
-
-.coffee {
-  background-color: #E4C494;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #92703b;
-  }
-}
-
-.coffee:hover, .coffee:focus {
-  background-color: #ebd3af;
-  
-  .frosting-part, .frosting-part-small {
-    background-color: #ad8c4a;
-  }
-}
 
 @media screen and (max-height: 800px) {
   #container {
