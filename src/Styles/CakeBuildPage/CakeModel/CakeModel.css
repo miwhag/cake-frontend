@@ -30,6 +30,7 @@
 
 #cake-layer-section {
   width: 100px;
+  width: 100px;
   margin: 7em;
   border-radius: 50%;
   border: 1px solid #ebe8e8;
@@ -37,13 +38,14 @@
 }
 
 #cake-layer-section .cake-layer-slice {
-  height: 20px;
+  height: 23px;
   width: 100px;
 }
 
 #cake-layer-section .frosting-layer-slice {
-  height: 20px;
+  height: 13px;
   width: 100px;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
 .cake {
@@ -238,5 +240,12 @@
   #container {
     top: 120%;
   }
+}
+
+.frosting-row {
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 /*# sourceMappingURL=CakeModel.css.map */

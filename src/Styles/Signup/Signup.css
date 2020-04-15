@@ -134,8 +134,8 @@ table {
   color: white;
   font-size: 13px;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, right top, from(#ff105f), to(#ffad06));
-  background: linear-gradient(to right, #ff105f, #ffad06);
+  background: -webkit-gradient(linear, left top, right top, from(#fc91b5), to(#f8cd76));
+  background: linear-gradient(to right, #fc91b5, #f8cd76);
 }
 
 #login-flip-button, #signup-flip-button {

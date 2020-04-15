@@ -29,21 +29,22 @@ $plateColor: rgb(189, 193, 211);
 
 #cake-layer-section{
   width: 100px;
+  width: 100px;
   margin: 7em;
   border-radius: 50%;
   border: 1px solid rgb(235, 232, 232);
   overflow: hidden;
 
   .cake-layer-slice{
-    // background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
-    height: 20px;
+    height: 23px;
     width: 100px;
   }
 
+
   .frosting-layer-slice{
-   height: 20px;
+   height: 13px;
    width: 100px;
-  
+   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
 }
 
@@ -208,4 +209,14 @@ $plateColor: rgb(189, 193, 211);
   #container {
     top: 120%;
   }
+}
+
+
+.frosting-row {
+  // display: flex;
+  // flex-direction: row;
+  // width: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: 0.1s;
 }
