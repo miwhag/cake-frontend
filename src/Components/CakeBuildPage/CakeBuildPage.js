@@ -21,6 +21,10 @@ export default class CakeBuildPage extends Component {
             finish_colors: [],
             cake: [],
             finish: [],
+            accent: [],
+            finish_accents: [],
+            accent_changed: false,
+            accent_image: 'https://i.ibb.co/xDc5zL3/blank.png',
             finish_color_changed: false,
             finish_color: '#ffffff',
             frosting: [],
@@ -57,8 +61,15 @@ export default class CakeBuildPage extends Component {
 
             fetch('http://localhost:3030/finish_colors')
             .then(response => response.json())
-            .then(result => this.setState({finish_colors: result.finish_colors}))
+            .then(result => this.setState({finish_colors: result.finish_colors})),
+
+            fetch('http://localhost:3030/finish_accents')
+            .then(response => response.json())
+            .then(result => this.setState({finish_accents: result.finish_accents})),
+
             )}
+
+        
 
             updateCakeColor = (cakeObject) => {
                 console.log(cakeObject)
@@ -82,6 +93,16 @@ export default class CakeBuildPage extends Component {
                     })
                 }
             }
+
+            updateCakeAccent = (accentObject) => {
+                if(this.state.accent_changed === false || this.state.accent !== accentObject.id){
+                    this.setState({
+                        accent_changed: true, 
+                        accent: accentObject,
+                        accent_image: accentObject.image
+                    })
+                } 
+            }
         
             updateFrostingColor = (frostingObject) => {
                 console.log(frostingObject)
@@ -102,7 +123,15 @@ export default class CakeBuildPage extends Component {
             <div id="CakeBuildPage-container">
                 <main>
                     <section id="cake-model-container">
-                    <CakeModel finish_color={this.state.finish_color} cake_color={this.state.cake_layer_color} cake_icon={this.state.cake_layer_icon} frosting_image={this.state.frosting_layer_image} frosting_color={this.state.frosting_layer_color}/>
+
+                    <CakeModel 
+                    finish_color={this.state.finish_color} 
+                    cake_color={this.state.cake_layer_color} 
+                    cake_icon={this.state.cake_layer_icon} 
+                    frosting_image={this.state.frosting_layer_image} 
+                    frosting_color={this.state.frosting_layer_color} 
+                    accent={this.state.accent_image}/>
+
                     </section>
 
                     <section id="cake-build-container">
@@ -163,7 +192,10 @@ export default class CakeBuildPage extends Component {
                                             finish={this.state.finish} 
                                             finish_type={this.state.finish_type} 
                                             finish_colors={this.state.finish_colors}
-                                            updateCakeLayerColor={this.updateCakeLayerColor}/>
+                                            finish_accents={this.state.finish_accents}
+                                            accent={this.state.accent}
+                                            updateCakeLayerColor={this.updateCakeLayerColor}
+                                            updateCakeAccent={this.updateCakeAccent}/>
                                         </TabPanel>
 
                                         <TabPanel>

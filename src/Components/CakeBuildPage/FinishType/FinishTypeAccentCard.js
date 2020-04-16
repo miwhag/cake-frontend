@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
-export default class FinishTypeCard extends Component {
-
+export default class FinishTypeAccentCard extends Component {
     handleClick = () => {
-        this.props.updateCakeLayerColor(this.props.finish)
+        this.props.updateCakeAccent(this.props.accent)
     }
 
     render() {
-        const {color, checked} = this.props;
+        const {image, name, checked} = this.props;
         return (
-
             <div id="FinishTypeCard-main-container">
                 {checked ? 
                     <img id="checkmark" 
@@ -21,14 +19,15 @@ export default class FinishTypeCard extends Component {
                     />
                 : null }
   
-                <div className="FinishTypeCard-color" 
+                <div className="FinishTypeCard-accent" 
                 style={{ 
-                    background: color,
                     opacity: checked ? 0.3 : 1
                     }}
-                onClick={() => this.handleClick()} />
-                
-            </div>
+                onClick={() => this.handleClick()}>
+                    <img style={{width: "70px"}}src={image} alt={name}/>
+                    </div>
+            
+                </div>
         )
     }
 
