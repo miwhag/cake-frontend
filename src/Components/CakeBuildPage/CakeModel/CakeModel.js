@@ -66,7 +66,7 @@ export default class CakeModel extends Component {
             for (let i = 0; i < this.state.layers; i++)
             {
               let layerWidth = this.state.width * Math.pow(LAYER_PERCENTAGE / 100, i);
-              renderedLayers.push(<CakeLayer finish_color={this.props.finish_color} key={i} width={layerWidth} canBuild={this.state.canBuild}  />);
+              renderedLayers.push(<CakeLayer accent={this.props.accent} finish_color={this.props.finish_color} key={i} width={layerWidth} canBuild={this.state.canBuild}  />);
             }
             
         return (

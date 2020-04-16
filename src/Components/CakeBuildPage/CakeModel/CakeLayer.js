@@ -16,7 +16,7 @@ export default class CakeLayer extends React.Component {
     return (
       
       <button className={"cake-layer"}  style={layerStyle}>
-      <CakeAccent/>
+      <CakeAccent accent={this.props.accent} />
       </button>
     );
   }
