@@ -1,11 +1,20 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 import '../../Styles/NavLinks/NavLinks.css'
+
 
 export default class NavBar extends Component{
 
+    handleSignOut = (event) => {
+        event.preventDefault()
+        window.localStorage.clear()
+        window.location.href = "/" 
+
+    }
+
+   
+
     render(){
-    
         return (
                 <nav id="Nav-container">
                     <div id="Nav-title-container">
@@ -13,10 +22,12 @@ export default class NavBar extends Component{
                         <div id="Nav-div-bar"></div>
                      </div>
                    
-                    <div className="nav-links">
-                        <Link to='/login'><button id="Nav-signin-button">Login</button></Link>
-            
-                    </div>
+                   {localStorage.token ? 
+                        <div className="nav-links" onClick={this.handleSignOut}>
+                            <button id="Nav-signin-button">Logout</button>
+                        </div>  
+                    : null 
+                    }
 
                 </nav>
         )

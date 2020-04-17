@@ -89,7 +89,6 @@ table {
 .Form .Signup-title {
   font-family: "Questrial", sans-serif;
   font-size: 30px;
-  color: #363636;
   padding-bottom: 30px;
 }
 
@@ -134,13 +133,34 @@ table {
   color: white;
   font-size: 13px;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, right top, from(#fc91b5), to(#f8cd76));
-  background: linear-gradient(to right, #fc91b5, #f8cd76);
+  background: -webkit-gradient(linear, left top, right top, from(#ee3e79), to(#750780));
+  background: linear-gradient(to right, #ee3e79, #750780);
+}
+
+.Signup-form-submit:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.Signup-form-submit:focus {
+  outline: 0px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 #login-flip-button, #signup-flip-button {
   border: none;
-  cursor: pointer;
   font-size: 14px;
+}
+
+#login-flip-button:hover, #signup-flip-button:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+#login-flip-button:focus, #signup-flip-button:focus {
+  outline: 0px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 /*# sourceMappingURL=Signup.css.map */

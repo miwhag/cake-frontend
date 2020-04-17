@@ -8,7 +8,7 @@ export default function HomePageGreeting() {
             <h3 id="greeting-container-h3">BUILD YOUR</h3>
             <h1 id="greeting-container-h1">CAKE</h1>
             <p id="greeting-container-p"> Planning your cake has never been simpler. </p>
-            <Link to='/signup'><button id="greeting-container-button"> SIGN UP </button></Link>
+            <Link to='/signup'><button id="greeting-container-button"> GET STARTED </button></Link>
         </div>
     )
 }
