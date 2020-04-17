@@ -5,7 +5,7 @@ This mod 4 fullstack app created with Create React App as the frontend and Node.
 It relates some information regarding the devestation that took place from the Australian Bush Fires and directs you to conservations and rescues doing good. Also includes some data visualization made possible with Carto and a dataset found and imported from Kaggle. Finally there is contact form that allows you to get in touch if desired. 
 
 
-![](src/Images/capstone.gif)
+![](src/capstone.gif)
 
 ---
 
