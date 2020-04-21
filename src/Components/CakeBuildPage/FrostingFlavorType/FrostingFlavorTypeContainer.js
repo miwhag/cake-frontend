@@ -19,9 +19,10 @@ export default class FrostingFlavorTypeContainer extends Component{
     
     handleFilter = (e) => {
         const filtered = this.props.frosting_flavor_type.filter(frosting => {
-           if(e.target.value === frosting.frosting_type.name){
+            if(e.target.value === frosting.frosting_type.name){
                return frosting
             } 
+            return null 
         })
         this.setState({filtered_flavors: filtered})
     }

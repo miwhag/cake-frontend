@@ -140,7 +140,7 @@ export default class CakeBuildPage extends Component {
                             <h1 id="title-h1"> Build your Cake</h1>
                             <p id="title-p"> Below are a variety of options to decorate your cake.</p>
 
-
+                        <div id="tabs-container">
                             <Tabs forceRenderTabPanel defaultIndex={1}>
                                 <TabList>
                                     <Tab>Cake Flavors</Tab>
@@ -205,7 +205,7 @@ export default class CakeBuildPage extends Component {
                                     </Tabs>
                                 </TabPanel>
                             </Tabs>
-                        
+                            </div>
                         </div>   
                     </section>
                 </main>

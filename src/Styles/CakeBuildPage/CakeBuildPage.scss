@@ -8,13 +8,12 @@
   align-items: center;
   height: 115vh;
   width: 100vw;
-
-  
   main{
       width: 90vw;
-      height:79vh;
+      height:80vh;
       display: flex;
       background-color: whitesmoke;
+      
       #cake-build-container{
         border-left: 1px solid rgb(177, 175, 175);
         height: 100%;
@@ -41,13 +40,14 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 50em;
-          background-color: white;
-   
-          
+          width: 45em;
+          background-color: white; 
     }
 
 
   }
 }
 
+#tabs-container{
+  width: 45em;
+}

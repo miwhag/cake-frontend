@@ -59,16 +59,13 @@ table {
           justify-content: center;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
-  width: 45em;
-  padding: 0px;
-  margin-top: 15px;
   z-index: 1;
-  position: relative;
+  width: 45em;
 }
 
 #FrostingFlavorTypeCard-container {
-  width: 170px;
-  height: 170px;
+  width: 145px;
+  height: 145px;
   margin: 10px;
   text-align: center;
   -webkit-box-shadow: 5px 5px 10px grey;
@@ -109,7 +106,7 @@ table {
 }
 
 #FrostingFlavorTypeCard-container .FrostingFlavorType-image {
-  width: 80px;
+  width: 70px;
   border-radius: 50%;
 }
 

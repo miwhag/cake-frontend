@@ -13,20 +13,15 @@ export default class SignupForm extends Component {
     handleChange = (event) => {
         const target = event.target;
         const value = target.value;
-        const name = target.name;
-
+        const name = target.name
         this.setState({
             [name]: value
         })
     }
 
-    validateForm = (event) => {
-
-    }
-
     handleSubmit = (event) => {
         event.preventDefault();
-          fetch('http://localhost:3030/users', {
+          fetch('https://build-cake.herokuapp.com/users', {
               method: 'POST', 
               headers: {
                   'Content-Type': 'application/json'
