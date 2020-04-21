@@ -120,6 +120,7 @@ export default class CakeBuildPage extends Component {
 
     render() {
         return (
+        
             <div id="CakeBuildPage-container">
                 <main>
                     <section id="cake-model-container">

@@ -20,6 +20,10 @@ export default class SignupForm extends Component {
         })
     }
 
+    validateForm = (event) => {
+
+    }
+
     handleSubmit = (event) => {
         event.preventDefault();
           fetch('http://localhost:3030/users', {
@@ -52,6 +56,7 @@ export default class SignupForm extends Component {
                         name="first_name" 
                         type ="text"
                         placeholder="First Name" 
+                        required
                         value={this.state.first_name}
                         onChange={this.handleChange}
                         >
@@ -62,6 +67,7 @@ export default class SignupForm extends Component {
                         name="last_name" 
                         type ="text"
                         placeholder="Last Name" 
+                        required
                         value={this.state.last_name}
                         onChange={this.handleChange}
                     >
@@ -73,6 +79,7 @@ export default class SignupForm extends Component {
                     name="username" 
                     type ="text"
                     placeholder="Username" 
+                    required
                     value={this.state.username}
                     onChange={this.handleChange}
              >
@@ -83,6 +90,7 @@ export default class SignupForm extends Component {
                     name="password" 
                     type ="password"
                     placeholder="Password" 
+                    required
                     value={this.state.password}
                     onChange={this.handleChange}
              >

@@ -8,6 +8,7 @@ import {HomepageImage} from './StyledBubbles'
 
 export default function Homepage() {
     return (
+      
         <header id="Homepage-header">
             <HomePageGreeting />
             <HomepageImage /> 

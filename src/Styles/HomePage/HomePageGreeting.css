@@ -89,5 +89,13 @@ table {
 
 #greeting-container #greeting-container-button:hover {
   color: #613f61;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+#greeting-container #greeting-container-button:focus {
+  outline: 0px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 /*# sourceMappingURL=HomePageGreeting.css.map */

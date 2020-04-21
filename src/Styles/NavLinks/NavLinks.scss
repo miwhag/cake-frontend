@@ -37,19 +37,25 @@
         justify-content: flex-end;
         z-index: 2;
         #Nav-signin-button{
-        font-size: 17px;
-        padding: 10px;
+        font-size: 16px;
+        padding: 8px;
         margin: 10px;
         width: 8em;
-        border-radius: 1em;
-        color: grey;
+        border-radius: 20px;
+        color: rgb(10, 1, 1);
         border: none;
         cursor: pointer;
 
         &:hover{
             background-color:$purpleBackgroundColor;
             color: $primaryTextColor;
-            box-shadow: 2px 2px 8px rgb(206, 206, 206);
+            transform: translateY(2px);
+        }
+
+        &:focus{
+            outline: 0px;
+            transform: translateY(2px);
+
         }
        }
     }

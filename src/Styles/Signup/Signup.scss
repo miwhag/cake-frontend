@@ -27,7 +27,6 @@ position: relative;
     .Signup-title{
         font-family: $primaryFont;
         font-size: 30px;
-        color: $greyTextColor;
         padding-bottom: 30px;
 
     }
@@ -71,13 +70,25 @@ position: relative;
     color: white;
     font-size: 13px;
     cursor: pointer;
-    background: linear-gradient(to right, #c46484, #a38aaf);
+    background: linear-gradient(to right, #ee3e79, #750780);
+    &:hover{
+        transform: translateY(2px);
+    }
+    &:focus{
+        outline: 0px;
+        transform: translateY(2px);
+    }
 }
 
 #login-flip-button, #signup-flip-button{
     border: none;
-    cursor: pointer;
     font-size: 14px;
+    &:hover{
+        transform: translateY(2px);
+    }
+    &:focus{
+        outline: 0px;
+        transform: translateY(2px);
+    }
 }
-
 

@@ -33,6 +33,11 @@
         letter-spacing: 1px;
         &:hover{
             color: rgb(97, 63, 97);
+            transform: translateY(2px);
+        }
+        &:focus{
+            outline: 0px;
+            transform: translateY(2px);
         }
 
     }

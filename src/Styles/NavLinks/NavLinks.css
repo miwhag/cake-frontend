@@ -101,12 +101,12 @@ table {
 }
 
 #Nav-container .nav-links #Nav-signin-button {
-  font-size: 17px;
-  padding: 10px;
+  font-size: 16px;
+  padding: 8px;
   margin: 10px;
   width: 8em;
-  border-radius: 1em;
-  color: grey;
+  border-radius: 20px;
+  color: #0a0101;
   border: none;
   cursor: pointer;
 }
@@ -114,7 +114,13 @@ table {
 #Nav-container .nav-links #Nav-signin-button:hover {
   background-color: #ecebf5;
   color: #363636;
-  -webkit-box-shadow: 2px 2px 8px #cecece;
-          box-shadow: 2px 2px 8px #cecece;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+#Nav-container .nav-links #Nav-signin-button:focus {
+  outline: 0px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 /*# sourceMappingURL=NavLinks.css.map */
