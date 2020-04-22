@@ -2,7 +2,7 @@
 
 This application was build so that you could make a  cake virtully by chosing a cake flavor, frosting flavor, a finish and an accent to the cake. 
 
-View higher quality full video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
+View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
 
 
 ![](src/Images/capstone.gif)
