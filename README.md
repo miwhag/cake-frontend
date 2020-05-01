@@ -26,7 +26,6 @@ View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBW
 
 
 ### Technologies 
-* Create React App 
 * Javascript / HTML / SCSS
 * Node.js / Express
 * Knex/Objection.js
