@@ -1,9 +1,10 @@
 # Cake Builder App 
 
+This application was build so that you could make a  cake virtully by chosing a cake flavor, frosting flavor, a finish and an accent to the cake. View the full video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
+
 This application was build so that you could make a  cake virtully by chosing a cake flavor, frosting flavor, a finish and an accent to the cake. 
 
 View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
-
 
 ![](src/Images/capstone.gif)
 
@@ -16,7 +17,6 @@ View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBW
   * npm start to start app 
 * Note you will also need to clone down the backend repo as well which can be found below.
    * https://github.com/miwhag/cake_backend
-
 
 * From there you will need to create a username and sign in to your account 
 * Now you can use the application. 
