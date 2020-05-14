@@ -54,12 +54,12 @@ export default class CakeBuildPage extends Component {
             .then(result => this.setState({cake_flavors: result.cake_flavors})),
 
 
-            fetch('http://build-cake.herokuapp.com/finish_type')
+            fetch('https://build-cake.herokuapp.com/finish_type')
             .then(response => response.json())
             .then(result => this.setState({finish_type: result.finish_type})),
 
 
-            fetch('http://build-cake.herokuapp.com/finish_colors')
+            fetch('https://build-cake.herokuapp.com/finish_colors')
             .then(response => response.json())
             .then(result => this.setState({finish_colors: result.finish_colors})),
 
