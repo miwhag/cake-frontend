@@ -51,22 +51,25 @@ table {
           box-sizing: border-box;
 }
 
+#CakeFlavor-main-container {
+  position: relative;
+}
+
 #CakeFlavorsContainer-main-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
-  margin: 30px 10px 10px 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 45em;
-  position: relative;
+  margin-top: 1em;
 }
 
 .CakeFlavorCard-container {
-  width: 170px;
-  height: 170px;
+  width: 140px;
+  height: 140px;
   margin: 10px;
   text-align: center;
   -webkit-box-shadow: 5px 5px 10px grey;
@@ -100,10 +103,5 @@ table {
 .CakeFlavorCard-container .CakeFlavorCard-image {
   width: 80px;
   border-radius: 50%;
-}
-
-#checkmark {
-  width: 40px;
-  z-index: 3;
 }
 /*# sourceMappingURL=CakeFlavor.css.map */

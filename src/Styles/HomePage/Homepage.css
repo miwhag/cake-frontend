@@ -62,7 +62,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  overflow-x: hidden;
 }
 
 #Homepage-header:nth-of-type(1) {

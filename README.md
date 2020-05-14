@@ -24,7 +24,6 @@ View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBW
   * Signout to exit the app
    
 
-
 ### Technologies 
 * Javascript / HTML / SCSS
 * Node.js / Express
@@ -50,5 +49,4 @@ View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBW
 * Add more styling options to cake 
 
 ### Authors
-
 * Miwha Geschwind - [Github Repo](https://github.com/miwhag)
