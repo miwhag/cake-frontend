@@ -1,55 +1,52 @@
 # Cake Builder App 
 
-This mod 4 fullstack app created with Create React App as the frontend and Node.js/Express & Ruby in the backend. 
+This application was build so that you could make a  cake virtully by chosing a cake flavor, frosting flavor, a finish and an accent to the cake. 
 
-It relates some information regarding the devestation that took place from the Australian Bush Fires and directs you to conservations and rescues doing good. Also includes some data visualization made possible with Carto and a dataset found and imported from Kaggle. Finally there is contact form that allows you to get in touch if desired. 
+View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
 
 
-![](src/capstone.gif)
+![](src/Images/capstone.gif)
 
 ---
 
 ## How the app works  
 
 * To run the app, first fork and clone down this repo to your local device. 
-* Note you will also need to clone down the backend repos at 
-   * https://github.com/miwhag/wildlife_backend_node
-   * https://github.com/miwhag/wildlife_backend_ruby
-        
-* Once you have both backend servers running, you can go into the frontend repo you cloned down, and in another terminal tab type `npm install` and then `npm start`. This will prompt the application to start. 
+  * npm install to download dependencies 
+  * npm start to start app 
+* Note you will also need to clone down the backend repo as well which can be found below.
+   * https://github.com/miwhag/cake_backend
 
 
-* From there you can navigate through the website seen in the video above 
-
-   * Koala icon will bring you to the homepage 
+* From there you will need to create a username and sign in to your account 
+* Now you can use the application. 
+  * Click through tabs to see your options for what flavors, designs, and accents you can choose from. 
+  * Signout to exit the app
    
-   * Bushfire Map will show you all of the fires reported in Australia from 2019-08-01 to 2020-01-11. They are about two months behind on data, but more information on the dataset can be viewed here: https://www.kaggle.com/carlosparadis/fires-from-space-australia-and-new-zeland. 
-   
-   * Rescues will give a list of rescue and conservations in the area supporting the efforts to rehabilitate the animals that were effected. Click on a image and you can see more about that specific rescue.  
-   
-   * Finally the Contact page will allow you to send an email. This functionality was created with the Sendgrid Mail API and executed with an Express backend. 
-
 
 ### Technologies 
-* Create React App 
-* Javascript / HTML / CSS
-* Sendgrid Mail
-* Ruby on Rails 
+* Javascript / HTML / SCSS
 * Node.js / Express
+* Knex/Objection.js
+* React 
 
 ### Packages 
 ```
-* react-countup
-* react-reveal
-* react-visibility-sensor 
+* node-sass
+* react
+* react-card-flip
+* react-router-dom
+* react-tabs
+* styled-components
 * react-router-dom
 * react-scripts
-* axios 
 ```
 
 ### Next goals
 * Get the project in mobile version
+* Add ability to save cakes 
+* Create a dashboard for user info and cakes 
+* Add more styling options to cake 
 
 ### Authors
-
 * Miwha Geschwind - [Github Repo](https://github.com/miwhag)
