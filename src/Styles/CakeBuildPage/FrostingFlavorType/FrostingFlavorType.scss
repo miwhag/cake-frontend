@@ -1,6 +1,9 @@
 @import '../../Modules/variables';
 @import '../../Modules/_meyerReset';
 
+#FrostingFlavor-main-container{
+    position: relative;
+}
 
 #FrostingFlavorTypeContainer-main-container{
 display:grid;
@@ -31,7 +34,6 @@ width: 45em;
         font-size: 13px;
         font-weight: bold;
         color: rgb(46, 46, 46);
-   
     }
 
     #frosting-type{
@@ -49,10 +51,7 @@ width: 45em;
     }
 }
 
-#checkmark{
-    width: 40px;
-    z-index: 3;
-}
+
 
 #filter-frostingtype-form{
     display: flex;
@@ -72,6 +71,8 @@ width: 45em;
     width: 230px;
     height: 35px;
     font-size: 14px;
+    position: relative;
+
     &:focus{
         outline: none;
     }

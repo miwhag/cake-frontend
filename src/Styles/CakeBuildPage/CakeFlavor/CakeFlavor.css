@@ -51,6 +51,10 @@ table {
           box-sizing: border-box;
 }
 
+#CakeFlavor-main-container {
+  position: relative;
+}
+
 #CakeFlavorsContainer-main-container {
   display: -ms-grid;
   display: grid;
@@ -99,10 +103,5 @@ table {
 .CakeFlavorCard-container .CakeFlavorCard-image {
   width: 80px;
   border-radius: 50%;
-}
-
-#checkmark {
-  width: 40px;
-  z-index: 3;
 }
 /*# sourceMappingURL=CakeFlavor.css.map */

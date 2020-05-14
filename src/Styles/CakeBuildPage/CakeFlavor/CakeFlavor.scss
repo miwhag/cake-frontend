@@ -1,6 +1,9 @@
 @import '../../Modules/variables';
 @import '../../Modules/_meyerReset';
 
+#CakeFlavor-main-container{
+position: relative;
+}
 
 #CakeFlavorsContainer-main-container{
 display: grid;
@@ -37,9 +40,4 @@ margin-top: 1em;
         border-radius: 50%;
     }
 
-}
-
-#checkmark{
-    width: 40px;
-    z-index: 3;
 }

@@ -27,7 +27,7 @@ export default class FrostingFlavorTypeCard extends Component {
                         src="https://i.ibb.co/5KW8fJ3/checkmark.png" 
                         alt="checkmark"
                         style={{
-                            position: "absolute"
+                            position: "absolute",
                         }}
                     />
                 : null }
