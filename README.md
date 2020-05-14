@@ -2,6 +2,9 @@
 
 This application was build so that you could make a  cake virtully by chosing a cake flavor, frosting flavor, a finish and an accent to the cake. View the full video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
 
+This application was build so that you could make a  cake virtully by chosing a cake flavor, frosting flavor, a finish and an accent to the cake. 
+
+View higher quality video walkthrough here: https://www.youtube.com/watch?v=MDBWC9ui-aM&t=4s
 
 ![](src/Images/capstone.gif)
 
@@ -15,16 +18,13 @@ This application was build so that you could make a  cake virtully by chosing a 
 * Note you will also need to clone down the backend repo as well which can be found below.
    * https://github.com/miwhag/cake_backend
 
-
 * From there you will need to create a username and sign in to your account 
 * Now you can use the application. 
   * Click through tabs to see your options for what flavors, designs, and accents you can choose from. 
   * Signout to exit the app
    
 
-
 ### Technologies 
-* Create React App 
 * Javascript / HTML / SCSS
 * Node.js / Express
 * Knex/Objection.js
@@ -49,5 +49,4 @@ This application was build so that you could make a  cake virtully by chosing a 
 * Add more styling options to cake 
 
 ### Authors
-
 * Miwha Geschwind - [Github Repo](https://github.com/miwhag)

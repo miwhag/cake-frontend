@@ -51,6 +51,10 @@ table {
           box-sizing: border-box;
 }
 
+#FrostingFlavor-main-container {
+  position: relative;
+}
+
 #FrostingFlavorTypeContainer-main-container {
   display: -ms-grid;
   display: grid;
@@ -110,11 +114,6 @@ table {
   border-radius: 50%;
 }
 
-#checkmark {
-  width: 40px;
-  z-index: 3;
-}
-
 #filter-frostingtype-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +139,7 @@ table {
   width: 230px;
   height: 35px;
   font-size: 14px;
+  position: relative;
 }
 
 #FrostingFlavorTypeContainer-select:focus {

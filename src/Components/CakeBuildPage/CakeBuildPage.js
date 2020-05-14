@@ -37,33 +37,33 @@ export default class CakeBuildPage extends Component {
         }
 
         componentDidMount(){
-            fetch('http://localhost:3030/frosting_flavors')
+            fetch('https://build-cake.herokuapp.com/frosting_flavors')
             .then(response => response.json())
             .then(result => this.setState({frosting_flavors: result.frosting_flavors}),
 
-            fetch('http://localhost:3030/frosting_type')
+            fetch('https://build-cake.herokuapp.com/frosting_type')
             .then(response => response.json())
             .then(result => this.setState({frosting_type: result.frosting_type})),
 
-            fetch('http://localhost:3030/frosting_flavor_type')
+            fetch('https://build-cake.herokuapp.com/frosting_flavor_type')
             .then(response => response.json())
             .then(result => this.setState({frosting_flavor_type: result.frosting_flavor_type})),
 
-            fetch('http://localhost:3030/cake_flavors')
+            fetch('https://build-cake.herokuapp.com/cake_flavors')
             .then(response => response.json())
             .then(result => this.setState({cake_flavors: result.cake_flavors})),
 
 
-            fetch('http://localhost:3030/finish_type')
+            fetch('https://build-cake.herokuapp.com/finish_type')
             .then(response => response.json())
             .then(result => this.setState({finish_type: result.finish_type})),
 
 
-            fetch('http://localhost:3030/finish_colors')
+            fetch('https://build-cake.herokuapp.com/finish_colors')
             .then(response => response.json())
             .then(result => this.setState({finish_colors: result.finish_colors})),
 
-            fetch('http://localhost:3030/finish_accents')
+            fetch('https://build-cake.herokuapp.com/finish_accents')
             .then(response => response.json())
             .then(result => this.setState({finish_accents: result.finish_accents})),
 
