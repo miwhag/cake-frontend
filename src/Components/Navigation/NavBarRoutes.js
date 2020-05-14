@@ -15,7 +15,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute'
 
 
     login = (user) => {
-      return fetch('ttps://build-cake.herokuapp.com/login', {
+      return fetch('https://build-cake.herokuapp.com/login', {
               method: 'POST', 
               headers: {
                   'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute'
               localStorage.setItem('token', result.token)
               this.setState({user: result.user})
             } else{
-              console.log("didn't work")
+              console.log("Did not work")
             }
             
           })
