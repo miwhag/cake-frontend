@@ -6,12 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 71vh;
 }
 
 #Signup-form-container{
-width: 450px;
-height: 550px;
+width: 600px;
+height: 470px;
 border-radius: 15px;
 background-color: white;
 display: flex;
@@ -26,8 +26,8 @@ position: relative;
     position: absolute;
     .Signup-title{
         font-family: $primaryFont;
-        font-size: 30px;
-        padding-bottom: 30px;
+        font-size: 26px;
+        padding: 30px;
 
     }
     #Signup-first-last-name-container{
@@ -38,7 +38,7 @@ position: relative;
 
 
 .Signup-form-input{
-    width: 300px;
+    width: 350px;
     padding: 13px;
     margin: 10px;
     border-radius: 5px;
@@ -50,7 +50,7 @@ position: relative;
 }
 
 .Signup-form-input-name{
-    width: 140px;
+    width: 160px;
     padding: 13px;
     margin: 12px;
     border-radius: 5px;

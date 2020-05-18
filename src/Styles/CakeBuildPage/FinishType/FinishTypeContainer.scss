@@ -4,10 +4,10 @@
 #FinishTypeContainer-main-container{
     display:grid;
     justify-content: center;
-    grid-template-columns: repeat(10, auto);
+    grid-template-columns: repeat(8, auto);
     width: 55em;
     padding: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     z-index: 1;
     position: relative;
 }
