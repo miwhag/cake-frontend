@@ -2,15 +2,99 @@
 @import '../Modules/_meyerReset';
 
 body{
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #Homepage-header{
     display: flex;
-    justify-content: flex-end;
-    &:nth-of-type(1){
-        align-self: center;
-        align-items: center;
-    }
+    height: 80vh;
+    width: 100vw;
+}
 
+#curve{
+    width: 100vw;
+}
+
+#cake{
+   height: 400px;
+}
+
+#cake-accents, #cake-flavors {
+    height: 350px;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .title{
+        justify-self: center;
+        h1{
+            text-align: center;
+            font-size: 28px;
+            font-family: $primaryFont;
+            color: rgb(85, 83, 83);
+        }
+        p{
+        width: 260px;
+        text-align: center;
+        padding-top: 10px;
+        color: rgb(85, 83, 83);
+        }
+    }
+}
+
+#about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    padding-bottom: 50px;
+        #card-container{
+            margin: 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #features-title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            margin-top: -65px;
+            #features-title{
+                font-size: 50px;
+                padding: 20px;
+                text-transform: uppercase;
+                color: #DB9395;
+                font-family: $primaryFont;
+            }
+            #feature-block{
+                height: 5px;
+                width: 100px;
+                background-color: rgb(74, 53, 92);;
+            }
+        }
+        
+}
+#purple_curve{
+    width: 100vw;
+    margin-bottom: -20px;
+}
+#footer{
+    height: 100px;
+    background-color: rgb(39, 24, 50);
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px;
+    #copyright{
+        color: white;
+        font-weight: 300;
+    }
 }

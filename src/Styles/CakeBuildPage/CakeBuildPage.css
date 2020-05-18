@@ -51,6 +51,19 @@ table {
           box-sizing: border-box;
 }
 
+#CakeBuildPage-main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #CakeBuildPage-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,27 +74,17 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 115vh;
   width: 100vw;
+  background: white;
 }
 
-#CakeBuildPage-container main {
-  width: 90vw;
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: whitesmoke;
-}
-
-#CakeBuildPage-container main #cake-build-container {
-  border-left: 1px solid #b1afaf;
-  height: 100%;
+#CakeBuildPage-container #cake-build-container {
+  height: 85vh;
   width: 100%;
   overflow: scroll;
 }
 
-#CakeBuildPage-container main #cake-build-container #title-container {
+#CakeBuildPage-container #cake-build-container #title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,17 +98,17 @@ table {
   padding: 4em;
 }
 
-#CakeBuildPage-container main #cake-build-container #title-container #title-h1 {
+#CakeBuildPage-container #cake-build-container #title-container #title-h1 {
   font-size: 30px;
   font-family: "Questrial", sans-serif;
   margin-bottom: 10px;
 }
 
-#CakeBuildPage-container main #cake-build-container #title-container #title-p {
+#CakeBuildPage-container #cake-build-container #title-container #title-p {
   margin-bottom: 30px;
 }
 
-#CakeBuildPage-container main #cake-model-container {
+#CakeBuildPage-container #cake-model-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,11 +122,13 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45em;
+  width: 55em;
+  height: 85vh;
   background-color: white;
+  border-right: 1px solid #e0e0e0;
 }
 
 #tabs-container {
-  width: 45em;
+  width: 55em;
 }
 /*# sourceMappingURL=CakeBuildPage.css.map */

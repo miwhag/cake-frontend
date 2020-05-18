@@ -7,10 +7,10 @@ position: relative;
 
 #CakeFlavorsContainer-main-container{
 display: grid;
-grid-template-columns: repeat(4, auto);
+grid-template-columns: repeat(5, auto);
 justify-content: center;
-width: 45em;
-margin-top: 1em;
+width: 55em;
+margin-top: 3em;
 }
 
 .CakeFlavorCard-container{
@@ -24,7 +24,7 @@ margin-top: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(245, 242, 247);
+    background: rgb(252, 252, 252);
     margin:15px;
     z-index: 20;
 
@@ -36,7 +36,7 @@ margin-top: 1em;
     }
 
     .CakeFlavorCard-image{
-        width:80px;
+        width:70px;
         border-radius: 50%;
     }
 

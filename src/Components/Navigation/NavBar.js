@@ -18,14 +18,25 @@ export default class NavBar extends Component{
         return (
                 <nav id="Nav-container">
                     <div id="Nav-title-container">
+                        <img id="slices" src="https://i.imgur.com/HY2IPkC.png" alt="slices"/>
                     <Link to='/'><h1 id="Nav-h1">BYC</h1></Link>
-                        <div id="Nav-div-bar"></div>
+                        {/* <div id="Nav-div-bar"></div> */}
                      </div>
                    
                    {localStorage.token ? 
+                    <div className="nav-link-container">
                         <div className="nav-links" onClick={this.handleSignOut}>
-                            <button id="Nav-signin-button">Logout</button>
+                            <a href="/">Logout</a>
                         </div>  
+
+                        <div className="nav-links">
+                            <a href="/dashboard">Dashboard</a>
+                        </div>
+
+                        <div className="nav-links">
+                            <a href="/build_your_cake">Build Your Cake</a>
+                        </div>
+                    </div>
                     : null 
                     }
 

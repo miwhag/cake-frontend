@@ -4,23 +4,28 @@
 #Nav-container{
     display:flex;
     justify-content: space-between;
-    margin: 0em 0em -7em 0em;
-    padding: 1em 2em 0em 2em;
+    padding-left: 20px;
     font-family: $primaryFont;
-
+    height: 80px;
+    background-color: rgb(43, 30, 54);
+    position: sticky;
+    top: 0;
+    #slices{
+        width: 45px;
+    }
 
     #Nav-title-container{
         align-items: center;
         z-index: 2;
+        display: flex;
         a{
             text-decoration: none;
         }
 
         #Nav-h1{
-            color: white;
-            letter-spacing: 10px;
-            font-weight: 300;
-            font-size: 25px;
+            color: rgb(247, 246, 248);
+            font-weight: 400;
+            font-size: 24px;
             margin: 10px;
         } 
 
@@ -32,32 +37,26 @@
             margin-top: 20px;
         }
     }
-    .nav-links{
+
+    .nav-link-container{
         display: flex;
-        justify-content: flex-end;
-        z-index: 2;
-        #Nav-signin-button{
-        font-size: 16px;
-        padding: 8px;
-        margin: 10px;
-        width: 8em;
-        border-radius: 20px;
-        color: rgb(10, 1, 1);
-        border: none;
-        cursor: pointer;
-
-        &:hover{
-            background-color:$purpleBackgroundColor;
-            color: $primaryTextColor;
-            transform: translateY(2px);
-        }
-
-        &:focus{
-            outline: 0px;
-            transform: translateY(2px);
-
-        }
-       }
+        padding: 10px;
     }
+    .nav-links{
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        letter-spacing: 1px;
+
+
+        a{
+            color: rgb(247, 246, 248);
+            text-decoration: none;
+        
+        }
     }
         
+}

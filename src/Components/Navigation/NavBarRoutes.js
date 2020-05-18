@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import HomePage from '../HomePage/Homepage'
 import Signup from '../Signup/Signup'
 import PrivateRoute from '../PrivateRoute/PrivateRoute'
+import PrivateDashboard from '../PrivateRoute/PrivateDashboard'
 
   
   export default class NavBarRoutes extends Component{
@@ -42,6 +43,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute'
       
         <Switch>
           <PrivateRoute exact path='/build_your_cake'/>
+          <PrivateDashboard exact path='/dashboard'/>
             <Route exact path='/' component={HomePage}/>
             <Route exact path='/signup' render={(props) => <Signup {...props} login={this.login}/>}/>
             <Route render={() => <Redirect to='/' />}/>

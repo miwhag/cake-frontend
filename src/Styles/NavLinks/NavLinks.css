@@ -58,9 +58,17 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0em 0em -7em 0em;
-  padding: 1em 2em 0em 2em;
+  padding-left: 20px;
   font-family: "Questrial", sans-serif;
+  height: 80px;
+  background-color: #2b1e36;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#Nav-container #slices {
+  width: 45px;
 }
 
 #Nav-container #Nav-title-container {
@@ -68,6 +76,9 @@ table {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #Nav-container #Nav-title-container a {
@@ -75,10 +86,9 @@ table {
 }
 
 #Nav-container #Nav-title-container #Nav-h1 {
-  color: white;
-  letter-spacing: 10px;
-  font-weight: 300;
-  font-size: 25px;
+  color: #f7f6f8;
+  font-weight: 400;
+  font-size: 24px;
   margin: 10px;
 }
 
@@ -90,37 +100,29 @@ table {
   margin-top: 20px;
 }
 
-#Nav-container .nav-links {
+#Nav-container .nav-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  z-index: 2;
+  padding: 10px;
 }
 
-#Nav-container .nav-links #Nav-signin-button {
-  font-size: 16px;
-  padding: 8px;
-  margin: 10px;
-  width: 8em;
-  border-radius: 20px;
-  color: #0a0101;
-  border: none;
-  cursor: pointer;
+#Nav-container .nav-links {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  letter-spacing: 1px;
 }
 
-#Nav-container .nav-links #Nav-signin-button:hover {
-  background-color: #ecebf5;
-  color: #363636;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-}
-
-#Nav-container .nav-links #Nav-signin-button:focus {
-  outline: 0px;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+#Nav-container .nav-links a {
+  color: #f7f6f8;
+  text-decoration: none;
 }
 /*# sourceMappingURL=NavLinks.css.map */
