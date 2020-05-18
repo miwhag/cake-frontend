@@ -120,11 +120,9 @@ export default class CakeBuildPage extends Component {
 
     render() {
         return (
-        
+        <div id="CakeBuildPage-main"> 
             <div id="CakeBuildPage-container">
-                <main>
                     <section id="cake-model-container">
-
                     <CakeModel 
                     finish_color={this.state.finish_color} 
                     cake_color={this.state.cake_layer_color} 
@@ -208,8 +206,8 @@ export default class CakeBuildPage extends Component {
                             </div>
                         </div>   
                     </section>
-                </main>
             </div>
+        </div>
         )
     }
 }

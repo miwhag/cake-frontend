@@ -1,7 +1,6 @@
 #main-body {
-  height: 100vh;
-  width: 100vw;
   background: #2e2341;
   background: linear-gradient(146deg, #2e2341 44%, #55405b 100%);
+  height: 100vh;
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 
-$containerHeight: 500px;
+// $containerHeight: 500px;
 $cakeLayerWidth: 275px;
 $cakeLayerHeight: 90px;
 $buttonSize: 40px;
@@ -9,12 +9,16 @@ $plateWidth: 280px;
 $plateHeight: 40px;
 $plateColor: rgb(189, 193, 211);
 
+#cake-control-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .container{
   display: flex;
   flex-direction: column;
   height: 500px;
   justify-content: flex-end;
-  align-items: center;
 }
 
 #cake-slice-container{
@@ -37,15 +41,12 @@ $plateColor: rgb(189, 193, 211);
     height: 23px;
     width: 100px;
   }
-
-
   .frosting-layer-slice{
    height: 13px;
    width: 100px;
    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
 }
-
 
 .cake {
   width: $cakeLayerWidth;
@@ -116,8 +117,6 @@ $plateColor: rgb(189, 193, 211);
    display: flex;
    margin-top: 5px;
   }
-  
-
   
 
   $noBuildColor: rgba(0, 0, 0, 0.5);
@@ -208,7 +207,6 @@ $plateColor: rgb(189, 193, 211);
     top: 120%;
   }
 }
-
 
 .frosting-row {
   // display: flex;

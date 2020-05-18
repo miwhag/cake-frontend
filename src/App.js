@@ -6,7 +6,7 @@ function App() {
     <div id="main-body">
       <NavBarRoutes />
     </div>
-  );
+  )
 }
 
 export default App;

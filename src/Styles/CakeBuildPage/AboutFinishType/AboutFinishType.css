@@ -52,7 +52,7 @@ table {
 }
 
 #AboutFinishTypeContainer {
-  width: 45em;
+  width: 55em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[3];

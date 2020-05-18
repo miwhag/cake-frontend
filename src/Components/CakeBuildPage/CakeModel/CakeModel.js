@@ -73,19 +73,21 @@ export default class CakeModel extends Component {
           <>
 
             <CakeSlice cake_icon={this.props.cake_icon} cake_color={this.props.cake_color} frosting_image={this.props.frosting_image} frosting_color={this.props.frosting_color}/>
-            
 
-            <div className="container">
-                <div className="cake">
-                    {renderedLayers}
+            <div id="cake-control-container">            
+                <div className="container">
+                    <div className="cake">
+                        {renderedLayers}
+                    </div>
+                    <Plate />  
                 </div>
-                <Plate />  
+
+                <CakeControls addLayer={this.addLayer} removeWidth={this.removeWidth} addWidth={this.addWidth} canBuild={this.state.canBuild} removeLayer={this.removeLayer}/>
+                
             </div>
 
-            <CakeControls addLayer={this.addLayer} removeWidth={this.removeWidth} addWidth={this.addWidth} canBuild={this.state.canBuild} removeLayer={this.removeLayer}/>
 
-
-            </>
+        </>
         ) 
     }
     

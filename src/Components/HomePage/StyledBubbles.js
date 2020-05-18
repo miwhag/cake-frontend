@@ -27,7 +27,9 @@ const pulse = keyframes`
 
 `;
 export const HomepageImage = styled(Cake)`
-margin: -4em 9em 5em -16em;
+margin-left: -20em;
+// width: 1500px;
+
 
 .bubble{
   animation: ${pulse} infinite 5s linear;
