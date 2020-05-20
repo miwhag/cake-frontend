@@ -26,7 +26,7 @@ export default class NavBar extends Component{
                       
                            {!localStorage.token ? 
                             <div>
-                                <MiniLoginForm/> 
+                                <MiniLoginForm login={this.props.login} /> 
                             </div>
                            : null}   
                    

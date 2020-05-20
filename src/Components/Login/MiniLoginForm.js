@@ -21,7 +21,7 @@ export default class MiniLoginForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
           this.props.login(this.state)
-          .then(() => this.props.history.push('/build_your_cake'))
+          .then(() => window.location.href = "/dashboard")
     }
     
 
