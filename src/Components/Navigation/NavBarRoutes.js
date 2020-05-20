@@ -39,7 +39,7 @@ import PrivateDashboard from '../PrivateRoute/PrivateDashboard'
       return (
 
         <Router>
-        <NavBar/>
+        <NavBar login={this.login}/>
       
         <Switch>
           <PrivateRoute exact path='/build_your_cake'/>

@@ -61,12 +61,12 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 71vh;
 }
 
 #Signup-form-container {
-  width: 450px;
-  height: 550px;
+  width: 500px;
+  height: 450px;
   border-radius: 15px;
   background-color: white;
   display: -webkit-box;
@@ -88,8 +88,8 @@ table {
 
 .Form .Signup-title {
   font-family: "Questrial", sans-serif;
-  font-size: 30px;
-  padding-bottom: 30px;
+  font-size: 26px;
+  padding: 30px;
 }
 
 .Form #Signup-first-last-name-container {
@@ -99,7 +99,7 @@ table {
 }
 
 .Signup-form-input {
-  width: 300px;
+  width: 350px;
   padding: 13px;
   margin: 10px;
   border-radius: 5px;
@@ -112,7 +112,7 @@ table {
 }
 
 .Signup-form-input-name {
-  width: 140px;
+  width: 160px;
   padding: 13px;
   margin: 12px;
   border-radius: 5px;
@@ -159,6 +159,51 @@ table {
 }
 
 #login-flip-button:focus, #signup-flip-button:focus {
+  outline: 0px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+#Mini-Login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.Mini-Signin-form-input {
+  width: 200px;
+  padding: 10px;
+  margin: 20px 8px 20px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.Mini-Signin-form-input:focus {
+  outline: none;
+}
+
+.Mini-Signin-form-submit {
+  width: 40px;
+  height: 38px;
+  border-radius: 8px;
+  border: none;
+  color: #fcfbff;
+  font-size: 18px;
+  margin: 20px 15px 20px 5px;
+  cursor: pointer;
+  background-color: #DB9395;
+}
+
+.Mini-Signin-form-submit:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.Mini-Signin-form-submit:focus {
   outline: 0px;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);

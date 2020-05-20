@@ -4,6 +4,7 @@ import ReactCardFlip from 'react-card-flip';
 import '../../Styles/Signup/Signup.css'
 import SignupForm from './SignupForm'
 import LoginForm from '../Login/LoginForm'
+import Footer from '../Footer/Footer'
 
 export default class Signup extends Component {
 
@@ -24,10 +25,13 @@ export default class Signup extends Component {
 
     render() {
         return (
+          <>
             <ReactCardFlip isFlipped={this.state.isFlipped}>
                 <SignupForm flip={this.handleFlipClick} flipDirection="horizontal" flipSpeedBackToFront={0.1}/>
                 <LoginForm flip={this.handleFlipClick} flipDirection="horizontal" flipSpeedBackToFront={0.1} {...this.props}  login={this.props.login} />
           </ReactCardFlip>
+          <Footer/>
+          </>
      
         )
     }

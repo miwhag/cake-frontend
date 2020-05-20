@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link } from 'react-router-dom'
+import MiniLoginForm from '../Login/MiniLoginForm'
 import '../../Styles/NavLinks/NavLinks.css'
 
 
@@ -18,10 +19,16 @@ export default class NavBar extends Component{
         return (
                 <nav id="Nav-container">
                     <div id="Nav-title-container">
-                        <img id="slices" src="https://i.imgur.com/HY2IPkC.png" alt="slices"/>
-                    <Link to='/'><h1 id="Nav-h1">BYC</h1></Link>
-                        {/* <div id="Nav-div-bar"></div> */}
-                     </div>
+                        <div id="logo">
+                            <img id="image-logo" src="https://i.imgur.com/HY2IPkC.png" alt="logo"/>
+                            <Link to='/'><h1 id="Nav-h1">BYC</h1></Link>
+                        </div>
+                      
+                           {!localStorage.token ? 
+                            <div>
+                                <MiniLoginForm login={this.props.login} /> 
+                            </div>
+                           : null}   
                    
                    {localStorage.token ? 
                     <div className="nav-link-container">
@@ -40,6 +47,7 @@ export default class NavBar extends Component{
                     : null 
                     }
 
+                    </div>
                 </nav>
         )
 

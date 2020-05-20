@@ -58,8 +58,8 @@ table {
 #CakeFlavorsContainer-main-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

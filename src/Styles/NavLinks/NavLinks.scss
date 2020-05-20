@@ -2,22 +2,25 @@
 @import '../Modules/_meyerReset';
 
 #Nav-container{
-    display:flex;
-    justify-content: space-between;
     padding-left: 20px;
     font-family: $primaryFont;
     height: 80px;
     background-color: rgb(43, 30, 54);
     position: sticky;
     top: 0;
-    #slices{
-        width: 45px;
+    #logo{
+        display: flex;
+        #image-logo{
+            width: 45px;
+        }
     }
+    
 
     #Nav-title-container{
-        align-items: center;
         z-index: 2;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         a{
             text-decoration: none;
         }

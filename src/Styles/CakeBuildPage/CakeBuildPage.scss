@@ -12,11 +12,11 @@
   display: flex; 
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  background: white;
+  background-color: white;
+  overflow-y: hidden;
   
   #cake-build-container{
-    height: 85vh;
+    height: 91vh;
     width: 100%;
     overflow: scroll;
 
@@ -24,7 +24,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 4em;
+        padding: 6em;
         #title-h1{
             font-size: 30px;
             font-family: $primaryFont;
@@ -40,8 +40,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 55em;
-      height: 85vh;
+      width: 50em;
+      height: 80vh;
       background-color: white;
       border-right: 1px solid rgb(224, 224, 224);
 }
