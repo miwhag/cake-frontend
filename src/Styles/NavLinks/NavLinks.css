@@ -52,12 +52,6 @@ table {
 }
 
 #Nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-left: 20px;
   font-family: "Questrial", sans-serif;
   height: 80px;
@@ -67,18 +61,27 @@ table {
   top: 0;
 }
 
-#Nav-container #slices {
+#Nav-container #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Nav-container #logo #image-logo {
   width: 45px;
 }
 
 #Nav-container #Nav-title-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #Nav-container #Nav-title-container a {
